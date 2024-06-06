@@ -13,7 +13,7 @@ body {
   color: white;
   max-width: 700px;
   margin: 0 auto;
-  padding: 20px 0px;
+  padding: 20px 20px;
   font-family: sans-serif;
 }
 
@@ -76,4 +76,5 @@ body {
 
 .software-grid-cell > img {
   width: 100%;
+  object-fit: contain;
 }
