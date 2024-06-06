@@ -4,8 +4,191 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ike Bischof</title>
+  
+  <link rel="preload" href="style.css" as="style">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <!-- TODO: Put style directly here to avoid Flash of Unstyled Content (FOUC)  -->
 </head>
-<body>
-  <p>Test</p>
+<body onload="onBodyLoad()">
+  <div id="intro-flex-box">
+    <img src="developer-image.svg" alt="Large icon of a male sitting in front of a laptop" id="developerImage">
+    <div id="software-grid-container">
+      <div id="software-grid">
+        
+      
+        <div class="software-grid-cell software-grid-cell-hover" role="img" aria-label="HTML Logo" id="HTML_softwareIcon" onmouseover="onSoftwareCellMouseOver(this)">
+          <img src="svg-icons/HTML.svg" alt="HTML Logo">  
+        </div>
+        
+        <div class="software-grid-cell" role="img" aria-label="CSS Logo" id="CSS_softwareIcon" onmouseover="onSoftwareCellMouseOver(this)">
+          <img src="svg-icons/CSS.svg" alt="CSS Logo">  
+        </div>
+        
+        <div class="software-grid-cell" role="img" aria-label="Javascript Logo" id="Javascript_softwareIcon" onmouseover="onSoftwareCellMouseOver(this)">
+          <img src="svg-icons/Javascript.svg" alt="Javascript Logo">  
+        </div>
+        
+        <div class="software-grid-cell" role="img" aria-label="P5JS Logo" id="P5JS_softwareIcon" onmouseover="onSoftwareCellMouseOver(this)">
+          <img src="svg-icons/P5JS.svg" alt="P5JS Logo">  
+        </div>
+        
+        <div class="software-grid-cell" role="img" aria-label="jQuery Logo" id="jQuery_softwareIcon" onmouseover="onSoftwareCellMouseOver(this)">
+          <img src="svg-icons/jQuery.svg" alt="jQuery Logo">  
+        </div>
+        
+        <div class="software-grid-cell" role="img" aria-label="Google Apps Script Logo" id="Google Apps Script_softwareIcon" onmouseover="onSoftwareCellMouseOver(this)">
+          <img src="svg-icons/Google Apps Script.svg" alt="Google Apps Script Logo">  
+        </div>
+        
+        <div class="software-grid-cell" role="img" aria-label="Python Logo" id="Python_softwareIcon" onmouseover="onSoftwareCellMouseOver(this)">
+          <img src="svg-icons/Python.svg" alt="Python Logo">  
+        </div>
+        
+        <div class="software-grid-cell" role="img" aria-label="Github Logo" id="Github_softwareIcon" onmouseover="onSoftwareCellMouseOver(this)">
+          <img src="svg-icons/Github.svg" alt="Github Logo">  
+        </div>
+        
+        <div class="software-grid-cell" role="img" aria-label="Git Logo" id="Git_softwareIcon" onmouseover="onSoftwareCellMouseOver(this)">
+          <img src="svg-icons/Git.svg" alt="Git Logo">  
+        </div>
+        
+        <div class="software-grid-cell" role="img" aria-label="Autohotkey Logo" id="Autohotkey_softwareIcon" onmouseover="onSoftwareCellMouseOver(this)">
+          <img src="svg-icons/Autohotkey.svg" alt="Autohotkey Logo">  
+        </div>
+        
+        <div class="software-grid-cell" role="img" aria-label="Processing Logo" id="Processing_softwareIcon" onmouseover="onSoftwareCellMouseOver(this)">
+          <img src="svg-icons/Processing.svg" alt="Processing Logo">  
+        </div>
+        
+        <div class="software-grid-cell" role="img" aria-label="Linux Logo" id="Linux_softwareIcon" onmouseover="onSoftwareCellMouseOver(this)">
+          <img src="svg-icons/Linux.svg" alt="Linux Logo">  
+        </div>
+        
+        <div class="software-grid-cell" role="img" aria-label="Microsoft Word Logo" id="Microsoft Word_softwareIcon" onmouseover="onSoftwareCellMouseOver(this)">
+          <img src="svg-icons/Microsoft Word.svg" alt="Microsoft Word Logo">  
+        </div>
+        
+        <div class="software-grid-cell" role="img" aria-label="Microsoft PowerPoint Logo" id="Microsoft PowerPoint_softwareIcon" onmouseover="onSoftwareCellMouseOver(this)">
+          <img src="svg-icons/Microsoft PowerPoint.svg" alt="Microsoft PowerPoint Logo">  
+        </div>
+        
+        <div class="software-grid-cell" role="img" aria-label="Microsoft Excel Logo" id="Microsoft Excel_softwareIcon" onmouseover="onSoftwareCellMouseOver(this)">
+          <img src="svg-icons/Microsoft Excel.svg" alt="Microsoft Excel Logo">  
+        </div>
+        
+        <div class="software-grid-cell" role="img" aria-label="Google Docs Logo" id="Google Docs_softwareIcon" onmouseover="onSoftwareCellMouseOver(this)">
+          <img src="svg-icons/Google Docs.svg" alt="Google Docs Logo">  
+        </div>
+        
+        <div class="software-grid-cell" role="img" aria-label="Google Sheets Logo" id="Google Sheets_softwareIcon" onmouseover="onSoftwareCellMouseOver(this)">
+          <img src="svg-icons/Google Sheets.svg" alt="Google Sheets Logo">  
+        </div>
+        
+        <div class="software-grid-cell" role="img" aria-label="Google Slides Logo" id="Google Slides_softwareIcon" onmouseover="onSoftwareCellMouseOver(this)">
+          <img src="svg-icons/Google Slides.svg" alt="Google Slides Logo">  
+        </div>
+        
+        <div class="software-grid-cell" role="img" aria-label="Audacity Logo" id="Audacity_softwareIcon" onmouseover="onSoftwareCellMouseOver(this)">
+          <img src="svg-icons/Audacity.svg" alt="Audacity Logo">  
+        </div>
+        
+        <div class="software-grid-cell" role="img" aria-label="Kdenlive Logo" id="Kdenlive_softwareIcon" onmouseover="onSoftwareCellMouseOver(this)">
+          <img src="svg-icons/Kdenlive.svg" alt="Kdenlive Logo">  
+        </div>
+        
+        <div class="software-grid-cell" role="img" aria-label="Hitfilm Express Logo" id="Hitfilm Express_softwareIcon" onmouseover="onSoftwareCellMouseOver(this)">
+          <img src="svg-icons/Hitfilm Express.svg" alt="Hitfilm Express Logo">  
+        </div>
+        
+        <div class="software-grid-cell" role="img" aria-label="Krita Logo" id="Krita_softwareIcon" onmouseover="onSoftwareCellMouseOver(this)">
+          <img src="svg-icons/Krita.svg" alt="Krita Logo">  
+        </div>
+        
+        <div class="software-grid-cell" role="img" aria-label="Adobe Animate Logo" id="Adobe Animate_softwareIcon" onmouseover="onSoftwareCellMouseOver(this)">
+          <img src="svg-icons/Adobe Animate.svg" alt="Adobe Animate Logo">  
+        </div>
+        
+        <div class="software-grid-cell" role="img" aria-label="Adobe Photoshop Logo" id="Adobe Photoshop_softwareIcon" onmouseover="onSoftwareCellMouseOver(this)">
+          <img src="svg-icons/Adobe Photoshop.svg" alt="Adobe Photoshop Logo">  
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <h1 class="text-align-center" id="pageTitle">Ike Bischof</h1>
+  <p class="text-align-center" id="selfSummary">I’m an experienced coder, tutor, and creative problem-solver.</p>
+  <script>
+let softwareIcons = `HTML
+CSS
+Javascript
+P5JS
+jQuery
+Google Apps Script
+Python
+Github
+Git
+Autohotkey
+Processing
+Linux
+Microsoft Word
+Microsoft PowerPoint
+Microsoft Excel
+Google Docs
+Google Sheets
+Google Slides
+Audacity
+Kdenlive
+Hitfilm Express
+Krita
+Adobe Animate
+Adobe Photoshop`.split("\n")
+
+    let highlightedSoftwareIndex = -1
+    let cells = null
+    let highlightCycleInterval = null
+    function onBodyLoad(){
+      // populateGrid()
+      //Start automatically cycling through highlighting software icons
+      cells = $("#software-grid").children()
+      advanceSoftwareHighlight()
+      highlightCycleInterval = setInterval(advanceSoftwareHighlight, 3000)
+    }
+    
+    function onSoftwareCellMouseOver(cellElement){
+      //When user hovers over any software icon, stop the cycle
+      cells.eq(highlightedSoftwareIndex).removeClass("software-grid-cell-hover")
+      highlightedSoftwareIndex = null
+      if(highlightCycleInterval) clearInterval(highlightCycleInterval)
+      setSoftwareHighlightText(cellElement.id.split("_softwareIcon")[0]);
+    }
+    
+    function advanceSoftwareHighlight() {
+      if(highlightedSoftwareIndex !== null){ //If highlighting cycle has not stopped...
+        cells.eq(highlightedSoftwareIndex).removeClass("software-grid-cell-hover")
+        highlightedSoftwareIndex = (highlightedSoftwareIndex + 1) % cells.length
+        cells.eq(highlightedSoftwareIndex).addClass("software-grid-cell-hover")
+        setSoftwareHighlightText(cells.eq(highlightedSoftwareIndex).attr("id").split("_softwareIcon")[0])
+      }
+    }
+    
+    function setSoftwareHighlightText(softwareName){
+      // let softwareName = cells.eq(highlightedSoftwareIndex).attr("id").split("_softwareIcon")[0]
+      console.log( softwareName )
+    }
+    
+    
+    function populateGrid(){
+      for(let i in softwareIcons){
+        let softwareName = softwareIcons[i]
+        $("#software-grid").append(`
+        <div class="software-grid-cell" role="img" aria-label="${softwareName} Logo" id="${softwareName}_softwareIcon" onmouseover="onSoftwareCellMouseOver(this)">
+          <img src="svg-icons/${softwareName}.svg" alt="${softwareName} Logo">  
+        </div>
+        `)
+      }
+    }
+    
+  </script>
 </body>
 </html>

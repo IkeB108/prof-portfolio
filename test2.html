@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aspect Ratio Example</title>
+    <style>
+        .container {
+          display: flex;
+          border-style: solid;
+          height: 30vw;
+          max-height: 300px;
+        }
+
+        .div-a {
+            background-color: lightblue;
+            height: 100%;
+            aspect-ratio: 3/2;
+            margin-left: auto;
+        }
+        
+        /* img {
+          flex-shrink: 0;
+          flex-grow: 0;
+          flex-basis: 0;
+        } */
+
+        .div-b {
+          background-color: coral;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <div class="div-b">Content B</div> -->
+        <img src="svg-icons/Animate.svg" alt="">
+        <div class="div-a">Content A</div>
+    </div>
+</body>
+</html>
