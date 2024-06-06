@@ -11,7 +11,7 @@
   <!-- TODO: Put style directly here to avoid Flash of Unstyled Content (FOUC)  -->
 </head>
 <body onload="onBodyLoad()">
-  <div id="intro-flex-box">
+  <div id="grid-and-profile-flex-box">
     <img src="developer-image.svg" alt="Large icon of a male sitting in front of a laptop" id="developerImage">
     <div id="software-grid-container">
       <div id="software-grid">
@@ -116,7 +116,10 @@
       
     </div>
   </div>
-  <h1 class="text-align-center" id="pageTitle">Ike Bischof</h1>
+  <div id="title-flex-box">
+    <h1 class="text-align-center" id="pageTitle">Ike Bischof</h1>
+    <p id="software-grid-title">HTML</p>
+  </div>
   <p class="text-align-center" id="selfSummary">I’m an experienced coder, tutor, and creative problem-solver.</p>
   <script>
 let softwareIcons = `HTML
@@ -152,7 +155,7 @@ Adobe Photoshop`.split("\n")
       //Start automatically cycling through highlighting software icons
       cells = $("#software-grid").children()
       advanceSoftwareHighlight()
-      highlightCycleInterval = setInterval(advanceSoftwareHighlight, 3000)
+      highlightCycleInterval = setInterval(advanceSoftwareHighlight, 2000)
     }
     
     function onSoftwareCellMouseOver(cellElement){
@@ -174,7 +177,8 @@ Adobe Photoshop`.split("\n")
     
     function setSoftwareHighlightText(softwareName){
       // let softwareName = cells.eq(highlightedSoftwareIndex).attr("id").split("_softwareIcon")[0]
-      console.log( softwareName )
+      // console.log( softwareName )
+      $("#software-grid-title").text(softwareName)
     }
     
     
