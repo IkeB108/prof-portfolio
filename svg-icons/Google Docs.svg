@@ -1,89 +1,171 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="47px" height="65px" viewBox="0 0 47 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
-    <title>Docs-icon</title>
-    <desc>Created with Sketch.</desc>
-    <defs>
-        <path d="M29.375,0 L4.40625,0 C1.9828125,0 0,1.99431818 0,4.43181818 L0,60.5681818 C0,63.0056818 1.9828125,65 4.40625,65 L42.59375,65 C45.0171875,65 47,63.0056818 47,60.5681818 L47,17.7272727 L29.375,0 Z" id="path-1"></path>
-        <path d="M29.375,0 L4.40625,0 C1.9828125,0 0,1.99431818 0,4.43181818 L0,60.5681818 C0,63.0056818 1.9828125,65 4.40625,65 L42.59375,65 C45.0171875,65 47,63.0056818 47,60.5681818 L47,17.7272727 L29.375,0 Z" id="path-3"></path>
-        <linearGradient x1="50.0053945%" y1="8.58610612%" x2="50.0053945%" y2="100.013939%" id="linearGradient-5">
-            <stop stop-color="#1A237E" stop-opacity="0.2" offset="0%"></stop>
-            <stop stop-color="#1A237E" stop-opacity="0.02" offset="100%"></stop>
-        </linearGradient>
-        <path d="M29.375,0 L4.40625,0 C1.9828125,0 0,1.99431818 0,4.43181818 L0,60.5681818 C0,63.0056818 1.9828125,65 4.40625,65 L42.59375,65 C45.0171875,65 47,63.0056818 47,60.5681818 L47,17.7272727 L29.375,0 Z" id="path-6"></path>
-        <path d="M29.375,0 L4.40625,0 C1.9828125,0 0,1.99431818 0,4.43181818 L0,60.5681818 C0,63.0056818 1.9828125,65 4.40625,65 L42.59375,65 C45.0171875,65 47,63.0056818 47,60.5681818 L47,17.7272727 L29.375,0 Z" id="path-8"></path>
-        <path d="M29.375,0 L4.40625,0 C1.9828125,0 0,1.99431818 0,4.43181818 L0,60.5681818 C0,63.0056818 1.9828125,65 4.40625,65 L42.59375,65 C45.0171875,65 47,63.0056818 47,60.5681818 L47,17.7272727 L29.375,0 Z" id="path-10"></path>
-        <path d="M29.375,0 L4.40625,0 C1.9828125,0 0,1.99431818 0,4.43181818 L0,60.5681818 C0,63.0056818 1.9828125,65 4.40625,65 L42.59375,65 C45.0171875,65 47,63.0056818 47,60.5681818 L47,17.7272727 L29.375,0 Z" id="path-12"></path>
-        <path d="M29.375,0 L4.40625,0 C1.9828125,0 0,1.99431818 0,4.43181818 L0,60.5681818 C0,63.0056818 1.9828125,65 4.40625,65 L42.59375,65 C45.0171875,65 47,63.0056818 47,60.5681818 L47,17.7272727 L29.375,0 Z" id="path-14"></path>
-        <radialGradient cx="3.16804688%" cy="2.71744318%" fx="3.16804688%" fy="2.71744318%" r="161.248516%" gradientTransform="translate(0.031680,0.027174),scale(1.000000,0.723077),translate(-0.031680,-0.027174)" id="radialGradient-16">
-            <stop stop-color="#FFFFFF" stop-opacity="0.1" offset="0%"></stop>
-            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
-        </radialGradient>
-    </defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Consumer-Apps-Docs-Large-VD-R8" transform="translate(-451.000000, -463.000000)">
-            <g id="Hero" transform="translate(0.000000, 63.000000)">
-                <g id="Personal" transform="translate(277.000000, 309.000000)">
-                    <g id="Docs-icon" transform="translate(174.000000, 91.000000)">
-                        <g id="Group">
-                            <g id="Clipped">
-                                <mask id="mask-2" fill="white">
-                                    <use xlink:href="#path-1"></use>
-                                </mask>
-                                <g id="SVGID_1_"></g>
-                                <path d="M29.375,0 L4.40625,0 C1.9828125,0 0,1.99431818 0,4.43181818 L0,60.5681818 C0,63.0056818 1.9828125,65 4.40625,65 L42.59375,65 C45.0171875,65 47,63.0056818 47,60.5681818 L47,17.7272727 L36.71875,10.3409091 L29.375,0 Z" id="Path" fill="#4285F4" fill-rule="nonzero" mask="url(#mask-2)"></path>
-                            </g>
-                            <g id="Clipped">
-                                <mask id="mask-4" fill="white">
-                                    <use xlink:href="#path-3"></use>
-                                </mask>
-                                <g id="SVGID_1_"></g>
-                                <polygon id="Path" fill="url(#linearGradient-5)" fill-rule="nonzero" mask="url(#mask-4)" points="30.6638281 16.4309659 47 32.8582386 47 17.7272727"></polygon>
-                            </g>
-                            <g id="Clipped">
-                                <mask id="mask-7" fill="white">
-                                    <use xlink:href="#path-6"></use>
-                                </mask>
-                                <g id="SVGID_1_"></g>
-                                <path d="M11.75,47.2727273 L35.25,47.2727273 L35.25,44.3181818 L11.75,44.3181818 L11.75,47.2727273 Z M11.75,53.1818182 L29.375,53.1818182 L29.375,50.2272727 L11.75,50.2272727 L11.75,53.1818182 Z M11.75,32.5 L11.75,35.4545455 L35.25,35.4545455 L35.25,32.5 L11.75,32.5 Z M11.75,41.3636364 L35.25,41.3636364 L35.25,38.4090909 L11.75,38.4090909 L11.75,41.3636364 Z" id="Shape" fill="#F1F1F1" fill-rule="nonzero" mask="url(#mask-7)"></path>
-                            </g>
-                            <g id="Clipped">
-                                <mask id="mask-9" fill="white">
-                                    <use xlink:href="#path-8"></use>
-                                </mask>
-                                <g id="SVGID_1_"></g>
-                                <g id="Group" mask="url(#mask-9)">
-                                    <g transform="translate(26.437500, -2.954545)">
-                                        <path d="M2.9375,2.95454545 L2.9375,16.25 C2.9375,18.6985795 4.90929688,20.6818182 7.34375,20.6818182 L20.5625,20.6818182 L2.9375,2.95454545 Z" id="Path" fill="#A1C2FA" fill-rule="nonzero"></path>
-                                    </g>
-                                </g>
-                            </g>
-                            <g id="Clipped">
-                                <mask id="mask-11" fill="white">
-                                    <use xlink:href="#path-10"></use>
-                                </mask>
-                                <g id="SVGID_1_"></g>
-                                <path d="M4.40625,0 C1.9828125,0 0,1.99431818 0,4.43181818 L0,4.80113636 C0,2.36363636 1.9828125,0.369318182 4.40625,0.369318182 L29.375,0.369318182 L29.375,0 L4.40625,0 Z" id="Path" fill-opacity="0.2" fill="#FFFFFF" fill-rule="nonzero" mask="url(#mask-11)"></path>
-                            </g>
-                            <g id="Clipped">
-                                <mask id="mask-13" fill="white">
-                                    <use xlink:href="#path-12"></use>
-                                </mask>
-                                <g id="SVGID_1_"></g>
-                                <path d="M42.59375,64.6306818 L4.40625,64.6306818 C1.9828125,64.6306818 0,62.6363636 0,60.1988636 L0,60.5681818 C0,63.0056818 1.9828125,65 4.40625,65 L42.59375,65 C45.0171875,65 47,63.0056818 47,60.5681818 L47,60.1988636 C47,62.6363636 45.0171875,64.6306818 42.59375,64.6306818 Z" id="Path" fill-opacity="0.2" fill="#1A237E" fill-rule="nonzero" mask="url(#mask-13)"></path>
-                            </g>
-                            <g id="Clipped">
-                                <mask id="mask-15" fill="white">
-                                    <use xlink:href="#path-14"></use>
-                                </mask>
-                                <g id="SVGID_1_"></g>
-                                <path d="M33.78125,17.7272727 C31.3467969,17.7272727 29.375,15.7440341 29.375,13.2954545 L29.375,13.6647727 C29.375,16.1133523 31.3467969,18.0965909 33.78125,18.0965909 L47,18.0965909 L47,17.7272727 L33.78125,17.7272727 Z" id="Path" fill-opacity="0.1" fill="#1A237E" fill-rule="nonzero" mask="url(#mask-15)"></path>
-                            </g>
-                        </g>
-                        <path d="M29.375,0 L4.40625,0 C1.9828125,0 0,1.99431818 0,4.43181818 L0,60.5681818 C0,63.0056818 1.9828125,65 4.40625,65 L42.59375,65 C45.0171875,65 47,63.0056818 47,60.5681818 L47,17.7272727 L29.375,0 Z" id="Path" fill="url(#radialGradient-16)" fill-rule="nonzero"></path>
-                    </g>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 65 65">
+  <defs>
+    <style>
+      .cls-1 {
+        fill-rule: evenodd;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9 {
+        stroke-width: 0px;
+      }
+
+      .cls-1, .cls-7 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #4285f4;
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-10 {
+        mask: url(#mask-3);
+      }
+
+      .cls-4 {
+        fill-opacity: .1;
+      }
+
+      .cls-4, .cls-5 {
+        fill: #1a237e;
+      }
+
+      .cls-11 {
+        mask: url(#mask-5);
+      }
+
+      .cls-5, .cls-7 {
+        fill-opacity: .2;
+      }
+
+      .cls-6 {
+        fill: #a1c2fa;
+      }
+
+      .cls-8 {
+        fill: url(#radial-gradient);
+      }
+
+      .cls-12 {
+        mask: url(#mask-2-2);
+      }
+
+      .cls-9 {
+        fill: #f1f1f1;
+      }
+
+      .cls-13 {
+        mask: url(#mask-6);
+      }
+
+      .cls-14 {
+        mask: url(#mask-4-2);
+      }
+
+      .cls-15 {
+        mask: url(#mask-1);
+      }
+
+      .cls-16 {
+        mask: url(#mask);
+      }
+    </style>
+    <mask id="mask" x="9" y="0" width="47" height="65" maskUnits="userSpaceOnUse">
+      <g id="mask-2">
+        <path id="path-1" class="cls-1" d="M38.4,0H13.4c-2.4,0-4.4,2-4.4,4.4v56.1c0,2.4,2,4.4,4.4,4.4h38.2c2.4,0,4.4-2,4.4-4.4V17.7L38.4,0Z"/>
+      </g>
+    </mask>
+    <mask id="mask-1" x="9" y="0" width="47" height="65" maskUnits="userSpaceOnUse">
+      <g id="mask-4">
+        <path id="path-3" class="cls-1" d="M38.4,0H13.4c-2.4,0-4.4,2-4.4,4.4v56.1c0,2.4,2,4.4,4.4,4.4h38.2c2.4,0,4.4-2,4.4-4.4V17.7L38.4,0Z"/>
+      </g>
+    </mask>
+    <linearGradient id="linear-gradient" x1="-869.2" y1="542.1" x2="-869.2" y2="541.1" gradientTransform="translate(14247.3 8922.3) scale(16.3 -16.4)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1a237e" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#1a237e" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="mask-2-2" data-name="mask-2" x="9" y="0" width="47" height="65" maskUnits="userSpaceOnUse">
+      <g id="mask-7">
+        <path id="path-6" class="cls-1" d="M38.4,0H13.4c-2.4,0-4.4,2-4.4,4.4v56.1c0,2.4,2,4.4,4.4,4.4h38.2c2.4,0,4.4-2,4.4-4.4V17.7L38.4,0Z"/>
+      </g>
+    </mask>
+    <mask id="mask-3" x="9" y="0" width="47" height="65" maskUnits="userSpaceOnUse">
+      <g id="mask-9">
+        <path id="path-8" class="cls-1" d="M38.4,0H13.4c-2.4,0-4.4,2-4.4,4.4v56.1c0,2.4,2,4.4,4.4,4.4h38.2c2.4,0,4.4-2,4.4-4.4V17.7L38.4,0Z"/>
+      </g>
+    </mask>
+    <mask id="mask-4-2" data-name="mask-4" x="9" y="0" width="47" height="65" maskUnits="userSpaceOnUse">
+      <g id="mask-11">
+        <path id="path-10" class="cls-1" d="M38.4,0H13.4c-2.4,0-4.4,2-4.4,4.4v56.1c0,2.4,2,4.4,4.4,4.4h38.2c2.4,0,4.4-2,4.4-4.4V17.7L38.4,0Z"/>
+      </g>
+    </mask>
+    <mask id="mask-5" x="9" y="0" width="47" height="65" maskUnits="userSpaceOnUse">
+      <g id="mask-13">
+        <path id="path-12" class="cls-1" d="M38.4,0H13.4c-2.4,0-4.4,2-4.4,4.4v56.1c0,2.4,2,4.4,4.4,4.4h38.2c2.4,0,4.4-2,4.4-4.4V17.7L38.4,0Z"/>
+      </g>
+    </mask>
+    <mask id="mask-6" x="9" y="0" width="47" height="65" maskUnits="userSpaceOnUse">
+      <g id="mask-15">
+        <path id="path-14" class="cls-1" d="M38.4,0H13.4c-2.4,0-4.4,2-4.4,4.4v56.1c0,2.4,2,4.4,4.4,4.4h38.2c2.4,0,4.4-2,4.4-4.4V17.7L38.4,0Z"/>
+      </g>
+    </mask>
+    <radialGradient id="radial-gradient" cx="-907.1" cy="562.2" fx="-907.1" fy="562.2" r="1.6" gradientTransform="translate(42642 26424.5) scale(47 -47)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity=".1"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g id="Page-1">
+    <g id="Consumer-Apps-Docs-Large-VD-R8">
+      <g id="Hero">
+        <g id="Personal">
+          <g id="Docs-icon">
+            <g id="Group">
+              <g id="Clipped">
+                <g class="cls-16">
+                  <path id="Path" class="cls-2" d="M38.4,0H13.4c-2.4,0-4.4,2-4.4,4.4v56.1c0,2.4,2,4.4,4.4,4.4h38.2c2.4,0,4.4-2,4.4-4.4V17.7l-10.3-7.4L38.4,0Z"/>
                 </g>
+              </g>
+              <g id="Clipped-2" data-name="Clipped">
+                <g class="cls-15">
+                  <polygon id="Path-2" data-name="Path" class="cls-3" points="39.7 16.4 56 32.9 56 17.7 39.7 16.4"/>
+                </g>
+              </g>
+              <g id="Clipped-3" data-name="Clipped">
+                <g class="cls-12">
+                  <path id="Shape" class="cls-9" d="M20.8,47.3h23.5v-3h-23.5v3ZM20.8,53.2h17.6v-3h-17.6v3ZM20.8,32.5v3h23.5v-3h-23.5ZM20.8,41.4h23.5v-3h-23.5v3Z"/>
+                </g>
+              </g>
+              <g id="Clipped-4" data-name="Clipped">
+                <g class="cls-10">
+                  <g id="Group-2" data-name="Group">
+                    <path id="Path-3" data-name="Path" class="cls-6" d="M38.4,0v13.3c0,2.4,2,4.4,4.4,4.4h13.2L38.4,0Z"/>
+                  </g>
+                </g>
+              </g>
+              <g id="Clipped-5" data-name="Clipped">
+                <g class="cls-14">
+                  <path id="Path-4" data-name="Path" class="cls-7" d="M13.4,0c-2.4,0-4.4,2-4.4,4.4v.4c0-2.4,2-4.4,4.4-4.4h25v-.4H13.4Z"/>
+                </g>
+              </g>
+              <g id="Clipped-6" data-name="Clipped">
+                <g class="cls-11">
+                  <path id="Path-5" data-name="Path" class="cls-5" d="M51.6,64.6H13.4c-2.4,0-4.4-2-4.4-4.4v.4c0,2.4,2,4.4,4.4,4.4h38.2c2.4,0,4.4-2,4.4-4.4v-.4c0,2.4-2,4.4-4.4,4.4Z"/>
+                </g>
+              </g>
+              <g id="Clipped-7" data-name="Clipped">
+                <g class="cls-13">
+                  <path id="Path-6" data-name="Path" class="cls-4" d="M42.8,17.7c-2.4,0-4.4-2-4.4-4.4v.4c0,2.4,2,4.4,4.4,4.4h13.2v-.4h-13.2Z"/>
+                </g>
+              </g>
             </g>
+            <path id="Path-7" data-name="Path" class="cls-8" d="M38.4,0H13.4c-2.4,0-4.4,2-4.4,4.4v56.1c0,2.4,2,4.4,4.4,4.4h38.2c2.4,0,4.4-2,4.4-4.4V17.7L38.4,0Z"/>
+          </g>
         </g>
+      </g>
     </g>
+  </g>
 </svg>

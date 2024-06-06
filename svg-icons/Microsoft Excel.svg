@@ -1,120 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 31.6 28.9">
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 31.6 31.6">
   <defs>
     <style>
       .cls-1 {
         opacity: .2;
       }
 
-      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+      .cls-1, .cls-2, .cls-3 {
         mix-blend-mode: multiply;
       }
 
-      .cls-6 {
+      .cls-4 {
         fill: url(#linear-gradient);
       }
 
-      .cls-6, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11, .cls-12 {
+      .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10 {
         stroke-width: 0px;
       }
 
-      .cls-7 {
+      .cls-5 {
         fill: #185c37;
       }
 
-      .cls-13, .cls-4 {
-        isolation: isolate;
-      }
-
-      .cls-8 {
-        fill: none;
-      }
-
-      .cls-9 {
-        fill: #33c481;
-      }
-
-      .cls-14 {
-        mix-blend-mode: soft-light;
-        opacity: .5;
-      }
-
       .cls-2 {
-        opacity: .2;
-      }
-
-      .cls-10 {
-        fill: #107c41;
+        opacity: .1;
       }
 
       .cls-11 {
-        fill: #21a366;
+        isolation: isolate;
       }
 
-      .cls-15 {
-        clip-path: url(#clippath);
+      .cls-6 {
+        fill: none;
+      }
+
+      .cls-7 {
+        fill: #33c481;
       }
 
       .cls-12 {
-        fill: #fff;
+        mix-blend-mode: soft-light;
       }
 
-      .cls-3 {
+      .cls-12, .cls-3 {
         opacity: .5;
       }
 
-      .cls-5 {
-        opacity: .1;
+      .cls-8 {
+        fill: #107c41;
+      }
+
+      .cls-9 {
+        fill: #21a366;
+      }
+
+      .cls-13 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-10 {
+        fill: #fff;
       }
     </style>
     <clipPath id="clippath">
-      <rect class="cls-8" x="7.2" width="24.3" height="28.9" rx="1.4" ry="1.4"/>
+      <rect class="cls-6" x="7.2" y="1.4" width="24.3" height="28.9" rx="1.4" ry="1.4"/>
     </clipPath>
-    <linearGradient id="linear-gradient" x1="2.8" y1="29.5" x2="13.4" y2="11.2" gradientTransform="translate(0 34.8) scale(1 -1)" gradientUnits="userSpaceOnUse">
+    <linearGradient id="linear-gradient" x1="2.8" y1="1051.8" x2="13.4" y2="1070.1" gradientTransform="translate(0 -1045.2)" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#fff" stop-opacity=".5"/>
       <stop offset="1" stop-color="#000" stop-opacity=".7"/>
     </linearGradient>
   </defs>
-  <g class="cls-13">
+  <g class="cls-11">
     <g id="Excel">
       <g id="_142" data-name=" 142">
         <g id="Ambient-2">
           <g class="cls-1">
-            <rect class="cls-12" x="7.2" y="0" width="24.3" height="28.9" rx="1.4" ry="1.4"/>
+            <rect class="cls-10" x="7.2" y="1.4" width="24.3" height="28.9" rx="1.4" ry="1.4"/>
           </g>
-          <g class="cls-5">
-            <image class="cls-4" width="108" height="126" transform="translate(6.6 -.4) scale(.2)" xlink:href="Excel-1.png"/>
-            <rect class="cls-12" x="7.2" y="0" width="24.3" height="28.9" rx="1.4" ry="1.4"/>
+          <g class="cls-2">
+            <rect class="cls-10" x="7.2" y="1.4" width="24.3" height="28.9" rx="1.4" ry="1.4"/>
           </g>
         </g>
-        <path class="cls-11" d="M19.8,0h-11.3c-.7,0-1.3.6-1.3,1.3,0,0,0,0,0,0v5.9h12.6V0Z"/>
-        <path class="cls-9" d="M30.2,0h-10.4v7.2h11.7V1.4C31.6.6,31,0,30.2,0Z"/>
-        <rect class="cls-10" x="19.8" y="14.4" width="11.7" height="7.2"/>
-        <path class="cls-7" d="M19.8,21.6v-7.2H7.2v13.1c0,.7.6,1.3,1.3,1.3,0,0,0,0,0,0h21.6c.7,0,1.3-.6,1.3-1.3,0,0,0,0,0,0v-5.9h-11.7Z"/>
-        <rect class="cls-10" x="7.2" y="7.2" width="12.6" height="7.2"/>
-        <rect class="cls-11" x="19.8" y="7.2" width="11.7" height="7.2"/>
-        <g class="cls-15">
+        <path class="cls-9" d="M19.8,1.4h-11.3c-.7,0-1.3.6-1.3,1.3h0v5.9h12.6V1.4Z"/>
+        <path class="cls-7" d="M30.2,1.4h-10.4v7.2h11.7V2.8c.1-.8-.5-1.4-1.3-1.4Z"/>
+        <rect class="cls-8" x="19.8" y="15.7" width="11.7" height="7.2"/>
+        <path class="cls-5" d="M19.8,23v-7.2H7.2v13.1c0,.7.6,1.3,1.3,1.3h21.6c.7,0,1.3-.6,1.3-1.3h0v-5.9h-11.7,0Z"/>
+        <rect class="cls-8" x="7.2" y="8.6" width="12.6" height="7.2"/>
+        <rect class="cls-9" x="19.8" y="8.6" width="11.7" height="7.2"/>
+        <g class="cls-13">
           <g id="Ambient-3">
             <g class="cls-3">
-              <image class="cls-4" width="96" height="95" transform="translate(-3.2 4.6) scale(.2)" xlink:href="Excel-2.png"/>
-              <rect class="cls-12" y="6.3" width="16.2" height="16.2" rx="1.4" ry="1.4"/>
+              <rect class="cls-10" y="7.7" width="16.2" height="16.2" rx="1.4" ry="1.4"/>
             </g>
-            <g class="cls-2">
-              <image class="cls-4" width="74" height="73" transform="translate(-.5 6) scale(.2)" xlink:href="Excel-3.png"/>
-              <rect class="cls-12" y="6.3" width="16.2" height="16.2" rx="1.4" ry="1.4"/>
+            <g class="cls-1">
+              <rect class="cls-10" y="7.7" width="16.2" height="16.2" rx="1.4" ry="1.4"/>
             </g>
           </g>
         </g>
-        <rect class="cls-10" y="6.3" width="16.2" height="16.2" rx="1.4" ry="1.4"/>
-        <rect class="cls-8" y="-1.8" width="32.5" height="32.5"/>
-        <path class="cls-12" d="M4.2,18.8l2.8-4.4-2.6-4.4h2.1l1.4,2.8c.1.3.2.5.3.6h0c0-.2.2-.4.3-.6l1.5-2.8h1.9l-2.7,4.4,2.7,4.4h-2l-1.6-3.1c0-.1-.1-.3-.2-.4h0c0,.1-.1.3-.2.4l-1.8,3h-2Z"/>
-        <g class="cls-14">
-          <rect class="cls-6" y="6.3" width="16.2" height="16.2" rx="1.4" ry="1.4"/>
+        <rect class="cls-8" y="7.7" width="16.2" height="16.2" rx="1.4" ry="1.4"/>
+        <rect class="cls-6" y="-.4" width="32.5" height="32.5"/>
+        <path class="cls-10" d="M4.2,20.1l2.8-4.4-2.6-4.4h2.1l1.4,2.8c0,.3.2.5.3.6h0c0-.2.2-.4.3-.6l1.5-2.8h1.9l-2.7,4.4,2.7,4.4h-2l-1.6-3.1c0-.1-.1-.3-.2-.4h0c0,.1,0,.3-.2.4l-1.8,3h-2,.1Z"/>
+        <g class="cls-12">
+          <rect class="cls-4" y="7.7" width="16.2" height="16.2" rx="1.4" ry="1.4"/>
         </g>
       </g>
     </g>
     <g id="TrapLine">
-      <rect class="cls-8" x="-15.8" y="-17.6" width="64" height="64"/>
+      <rect class="cls-6" x="-15.8" y="-16.3" width="64" height="64"/>
     </g>
   </g>
 </svg>
