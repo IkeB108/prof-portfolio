@@ -4,29 +4,14 @@ html {
 }
 
 :root {
-  /* --purple-darker: #151229;
+  --purple-darker: #151229;
   --purple-dark: #27233A;
   --purple-light: #443D66;
   --purple-lighter: #6b6299;
   --blue: #6D98BA;
   --gray: #9AADBF;
   --tan: #D3B99F;
-  --orange: #C17767; */
-  
-  /* --header-background-color: #151229;
-  --body-background-color: #443D66;
-  --project-card-background-color: #6b6299;
-  --text-color: #ffffff;
-  --project-card-highlight-color: #67c176;
-  --software-grid-cell-highlight-color: #ffffff; */
-  
-  --header-background-color: #050213;
-  --body-background-color: #171428;
-  --project-card-background-color: rgba(216, 213, 239, 0.15);
-  --text-color: #D8D5EF;
-  --project-card-highlight-color: #be7f4c;
-  --software-grid-cell-highlight-color: #D8D5EF;
-  --accent-color: #ffbd86;
+  --orange: #C17767;
 }
 
 @font-face {
@@ -34,11 +19,16 @@ html {
   src: url(timeBurner.ttf) 
 }
 
+/* @font-face {
+  font-family: geliatExtralight;
+  src: url(geliatExtralight.otf)
+} */
+
 body {
-  color: var(--text-color);
+  color: white;
   font-family: sans-serif;
   margin: 0;
-  background-color: var(--body-background-color);
+  background-color: var(--purple-light);
   font-weight:100;
 }
 
@@ -49,17 +39,16 @@ hr {
 .project-card {
   text-decoration: none;
   text-align:left;
-  color: var(--text-color);
+  color: white;
   padding: 10px;
-  background-color: var(--project-card-background-color);
+  background-color: var(--purple-lighter);
   margin: 0px;
   margin-bottom: 3px;
   display: flex;
 }
 
 .project-card:hover {
-  background-color: var(--project-card-highlight-color);
-  color:white;
+  background-color: var(--orange);
 }
 
 .project-title {
@@ -97,7 +86,7 @@ hr {
 #introductory-section {
   /* this is a <header> that extends to left & right edges of screen */
   /* elements in here should be contained in a smaller area */
-  background-color: var(--header-background-color);
+  background-color: var(--purple-dark);
   /* padding: 70px max(calc( (100vw - 730px)/2 ), 30px ); */
 }
 
@@ -128,14 +117,13 @@ hr {
 }
 
 .hyperlink {
-  cursor: pointer;
   text-decoration: none;
-  color: var(--accent-color);
+  color: var(--tan);
   font-weight:bold;
 }
 
 .hyperlink:hover {
-  color: #fff59f;
+  color: rgb(255, 255, 163);
 }
 
 .project-arrow-container {
@@ -170,7 +158,6 @@ hr {
   font-style:italic;
   text-align:right;
   text-wrap:nowrap;
-  color:var(--accent-color)
 }
 
 #title-flex-box {
@@ -211,12 +198,12 @@ hr {
 }
 
 .software-grid-cell:hover {
-  background-color: var(--software-grid-cell-highlight-color);
+  background-color: white;
   border-radius: 10px;
 }
 
 .software-grid-cell-hover {
-  background-color: var(--software-grid-cell-highlight-color);
+  background-color: white;
   border-radius: 10px;
 }
 
