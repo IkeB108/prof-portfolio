@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="preload" href="style.css" as="style">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+    embedExpanded = false;
+    function expandEmbed(){
+      embedExpanded = !embedExpanded
+      let container = document.querySelector(".project-container-outer")
+      if(embedExpanded){
+        container.style.height = container.dataset.expandedheight
+      } else {
+        container.style.height = container.dataset.unexpandedheight
+      }
+    }
+  </script>
+  <title>Ike Bischof</title>
+</head>
+<body>
+  <header class="page-header-for-project-description">
+    <a href="index.html"></a>
+    <img src="svg-icons/arrow-left.svg" alt="Right Arrow" class="header-back-arrow">
+    <img src="developer-image.svg" alt="" class="page-header-profile-image">
+    <h1 class="page-title-for-project-description">Ike Bischof</h1>
+  </header>
+  <section class="main-body">
+    
+    <noscript style="color:var(--accent-color);">It appears JavaScript is disabled in your browser. The project below may have limited or no functionality.<br><br></noscript>
+    
+    <div class="project-container-outer" data-expandedheight="800px" style="height: 300px;" data-unexpandedheight="300px">
+      <embed type="text/html" src="project-copies/interactive-homework-assistant/index.html" style="background-color:var(--text-color)">
+      <button onclick="expandEmbed()" class="expand-button">
+        <img src="svg-icons/expand.svg" alt="Expand" title="Expand">
+      </button>  
+    </div>
+    
+    <div class="project-description-title-container">
+      <div>
+        <h1 class="project-description-section-header">Interactive Homework Assistant</h1>
+        <p style="font-style:italic">PHIL 104 Class—Sac State<br>Summer 2023</p>
+      </div>
+      <img src="developer-image.svg" alt="" class="project-description-title-image">
+    </div>
+    <h2 class="project-description-section-header">Problem and Solution</h2>
+    <ul>
+      <li><b>Problem: </b>Students in PHIL 104 (Philosophy of Bioethics) found the instructions on discussion board assignments to be complicated and intimidating, with very specific formatting requirements.</li>
+      <li><b>Solution: </b> An interactive, fill-in-the-blank style website that breaks down discussion assignments into manageable steps, giving students more mental space to craft thoughtful arguments about their positions.</li>
+    </ul>
+    <h2 class="project-description-section-header">Skills Demonstrated</h2>
+    <ul>
+      <li><b>Technical skills: </b>HTML, CSS, Javascript, debugging, UX design</li>
+      <li><b>Soft skills: </b>Creative problem-solving, attention to detail, organizational skills, distilling information</li>
+    </ul>
+    <h2 class="project-description-section-header">Results</h2>
+    <ul>
+      <li><b>Feedback: </b>Students reported that the program was immensely helpful for making the assignments more manageable. The professor praised the effort as a good example of how students can leverage technology in their education in ways that don’t involve cheating or plagiarism.</li>
+    </ul>
+    <h2 class="project-description-section-header">Description</h2>
+    <p>A user-friendly dynamic online form that breaks down discussion board assignments into manageable steps, presenting one step at a time to reduce cognitive burden and assist with formatting. The program offers clear, concise instructions, and alerts the user if their writing is incomplete or too short. At the end, the program compiles all of the user’s inputs into a complete post, with the formatting done automatically.</p>
+  </section>
+</body>
+</html>

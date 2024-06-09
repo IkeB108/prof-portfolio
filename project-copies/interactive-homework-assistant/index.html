@@ -1,0 +1,545 @@
+<html>
+<!-- v2.5 -->
+<head>
+  <meta charset="UTF-8">
+  <title>📎PHIL 104 DB Assistant</title>
+  <script src="../jquery.js"></script>
+  <script src="countable.js"></script>
+</head>
+
+<script>
+
+let discussionData = {
+    "1": {
+      "longReplyDueDate": "Jun 7 2023",
+      "targetQuestion": "Are There Universal Ethical Principles That Should Govern the Conduct of Medicine and Research Worldwide?",
+      "PW": "represent and express philosophical reasoning about cultural diversity by writing clear and concise analytical and argumentative prose.",
+      "GED": "describe an ethical value related to cultural diversity (like “dignity”) in its historical context.",
+      "mediumReplyDueDate": "June 10 2023",
+      "shortReplyDueDate": "June 10 2023",
+      "module": "1"
+    },
+    "2": {
+      "longReplyDueDate": "May 31 2023",
+      "targetQuestion": "Is It Morally Acceptable to Buy and Sell Organs for Human Transplantation?",
+      "PW": "represent and express philosophical reasoning about human organ markets by writing clear and concise analytical and argumentative prose.",
+      "GED": "explain a social dynamic related to human organ markets (like “supply and demand”) in its historical context.",
+      "mediumReplyDueDate": "June 3 2023",
+      "shortReplyDueDate": "June 3 2023",
+      "module": "2"
+    },
+    "3": {
+      "longReplyDueDate": "Jun 7 2023",
+      "targetQuestion": "Were It Physically Safe, Would Human Reproductive Cloning Be Acceptable?",
+      "PW": "Represent and express philosophical reasoning about human reproductive cloning by writing clear and concise analytical and argumentative prose.",
+      "GED": "Demonstrate an understanding of one role of human diversity in society (for example, sexual orientation) related to human reproductive cloning.",
+      "mediumReplyDueDate": "June 10 2023",
+      "shortReplyDueDate": "June 10 2023",
+      "module": "3"
+    },
+    "4": {
+      "longReplyDueDate": "Jun 14 2023",
+      "targetQuestion": "Is the Deliberately Induced Abortion of a Human Pregnancy Ethically Justifiable?",
+      "PW": "Represent and express philosophical reasoning about deliberately induced abortion by writing clear and concise analytical and argumentative prose.",
+      "GED": "Explain one principle of philosophy (for example, “respecting persons”) related to deliberately induced abortion.",
+      "mediumReplyDueDate": "June 17 2023",
+      "shortReplyDueDate": "June 17 2023",
+      "module": "4"
+    },
+    "5": {
+      "longReplyDueDate": "Jun 14 2023",
+      "targetQuestion": "Is It Ethical to Patent or Copyright Genes, Embryos, or Their Parts?",
+      "PW": "Represent and express philosophical reasoning about biological patents/copyrights by writing clear and concise analytical and argumentative prose.",
+      "GED": "Describe a social value related to biological patents/copyrights (like “property”) in its cultural context.",
+      "mediumReplyDueDate": "June 17 2023",
+      "shortReplyDueDate": "June 17 2023",
+      "module": "5"
+    },
+    "6": {
+      "longReplyDueDate": "Jun 14 2023",
+      "targetQuestion": "Should a Child Have the Right to Refuse Medical Treatment to Which the Child’s Parents or Guardians Have Consented?",
+      "PW": "Represent and express philosophical reasoning about minor treatment refusals by writing clear and concise analytical and argumentative prose.",
+      "GED": "Explain a social issue related to minor treatment refusals (like “the age of majority”) in its cultural context.",
+      "mediumReplyDueDate": "June 17 2023",
+      "shortReplyDueDate": "June 17 2023",
+      "module": "6"
+    },
+    "7": {
+      "longReplyDueDate": "Jun 21 2023",
+      "targetQuestion": "Is Physician-Assisted Suicide Ever Ethical?",
+      "PW": "Represent and express philosophical reasoning about physician-assisted suicide by writing clear and concise analytical and argumentative prose.",
+      "GED": "Demonstrate an understanding of one role of human diversity in society (for example, age or ability/disability) related to physician-assisted suicide.",
+      "mediumReplyDueDate": "June 24 2023",
+      "shortReplyDueDate": "June 24 2023",
+      "module": "7"
+    },
+    "8": {
+      "longReplyDueDate": "Jun 21 2023",
+      "targetQuestion": "Should Stem-Cell Research Utilizing Embryonic Tissue Be Conducted?",
+      "PW": "Represent and express philosophical reasoning about embryonic stem-cell research by writing clear and concise analytical and argumentative prose.",
+      "GED": "Apply one method of philosophy (for example, “aim to be consistent”) to the study of social behavior related to embryonic stem-cell research.",
+      "mediumReplyDueDate": "June 24 2023",
+      "shortReplyDueDate": "June 24 2023",
+      "module": "8"
+    },
+    "9": {
+      "longReplyDueDate": "Jun 21 2023",
+      "targetQuestion": "Should We Prohibit the Use of Chimpanzees and Other Great Apes in Biomedical Research?",
+      "PW": "Represent and express philosophical reasoning about primate biomedical research by writing clear and concise analytical and argumentative prose.",
+      "GED": "Evaluate an ethical value related to primate biomedical research (like 'do no harm') in its cultural context.",
+      "mediumReplyDueDate": "June 24 2023",
+      "shortReplyDueDate": "June 24 2023",
+      "module": "9"
+    },
+    "10": {
+      "longReplyDueDate": "Jun 28 2023",
+      "targetQuestion": "Should the United States of America Adopt Universal Healthcare?",
+      "PW": "Represent and express philosophical reasoning about universal healthcare by writing clear and concise analytical and argumentative prose.",
+      "GED": "Critically examine a social dynamic related to universal healthcare (like 'health insurance') in its cultural context.",
+      "mediumReplyDueDate": "July 1 2023",
+      "shortReplyDueDate": "July 1 2023",
+      "module": "10"
+    },
+    "11": {
+      "longReplyDueDate": "Jun 28 2023",
+      "targetQuestion": "Is There a Legitimate Place for Human Genetic Enhancement?",
+      "PW": "Represent and express philosophical reasoning about human genetic enhancement by writing clear and concise analytical and argumentative prose.",
+      "GED": "Demonstrate an understanding of one role of human diversity in society (for example, economic class) related to human genetic enhancement.",
+      "mediumReplyDueDate": "July 1 2023",
+      "shortReplyDueDate": "July 1 2023",
+      "module": "11"
+    },
+    "12": {
+      "longReplyDueDate": "Jun 28 2023",
+      "targetQuestion": "Can There Be Agreement as to What Constitutes Human Death?",
+      "PW": "Represent and express philosophical reasoning about defining human death by writing clear and concise analytical and argumentative prose.",
+      "GED": "Apply a method of philosophy (for example, “necessary and sufficient conditions”) to the study of individual behavior related to defining human death.",
+      "mediumReplyDueDate": "July 1 2023",
+      "shortReplyDueDate": "July 1 2023",
+      "module": "12"
+    },
+    "13": {
+      "longReplyDueDate": "Jul 5 2023",
+      "targetQuestion": "Is There Ever a Circumstance in Which a Doctor May Withhold Information?",
+      "PW": "Represent and express philosophical reasoning about doctors withholding information by writing clear and concise analytical and argumentative prose.",
+      "GED": "Evaluate a social value related to doctors withholding information (like “benefit the patient”) in its historical context.",
+      "mediumReplyDueDate": "July 8 2023",
+      "shortReplyDueDate": "July 8 2023",
+      "module": "13"
+    },
+    "14": {
+      "longReplyDueDate": "Jul 5 2023",
+      "targetQuestion": "Should In Vitro Fertilization Be an Option for a Woman?",
+      "PW": "Represent and express philosophical reasoning about in vitro fertilization by writing clear and concise analytical and argumentative prose.",
+      "GED": "Critically examine a social issue related to in vitro fertilization (like “artificial reproductive technology”) in its historical context.",
+      "mediumReplyDueDate": "July 8 2023",
+      "shortReplyDueDate": "July 8 2023",
+      "module": "14"
+    },
+    "15": {
+      "longReplyDueDate": "Jul 5 2023",
+      "targetQuestion": "Are International Clinical Trials Exploitative?",
+      "PW": "Represent and express philosophical reasoning about international clinical trials by writing clear and concise analytical and argumentative prose.",
+      "GED": "Demonstrate an understanding of one role of human diversity in society (for example, race or ethnicity) related to international clinical trials.",
+      "mediumReplyDueDate": "July 8 2023",
+      "shortReplyDueDate": "July 8 2023",
+      "module": "15"
+    }
+  }
+  
+  let PWUnknownReplacement = "[This module's PW objective has not been released yet]"
+  let GEDUnknownReplacement = "[This module's GED objective has not been released yet]"
+  for(let i in discussionData){
+    if(discussionData[i].PW == "Unknown"){
+      discussionData[i].PW = PWUnknownReplacement
+    }
+    if(discussionData[i].GED == "Unknown"){
+      discussionData[i].GED = GEDUnknownReplacement
+    }
+  }
+  
+  
+
+  //Set short and medium reply due dates to be 3 days after long reply
+  // for(let i in discussionData){
+  //   let d = discussionData[i]
+  //   let newDueDate = addDays(new Date(d.longReplyDueDate), 3)
+  //   const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  //   d.shortReplyDueDate = d.mediumReplyDueDate = monthNames[newDueDate.getMonth()] + " " + newDueDate.getDate() + " " + newDueDate.getYear();
+  //   d.module = i
+  // }
+
+  // function addDays(date, days) {
+  //   var result = new Date(date);
+  //   result.setDate(result.getDate() + days);
+  //   return result;
+  // }
+
+  function downloadJSON(content, fileName, contentType) {
+    content = JSON.stringify(content)
+    let a = document.createElement("a");
+    let file = new Blob([content], { type: contentType });
+    a.href = URL.createObjectURL(file);
+    a.download = fileName;
+    a.click();
+    a.remove()
+  }
+
+  function brFor(id) { return '<br class="' + id + 'BR">' }
+
+  function newDropdownDiv(id, label, options) {
+    let ret = $("<div></div>").attr("id", id)
+    ret.append(brFor(id))
+    ret.append('<label for="' + id + 'Dropdown" id="' + id + 'DropdownLabel">' + label + '</label>')
+    let selectElt = $('<select id="' + id + 'Dropdown"></select>')
+    for (let i in options) {
+      selectElt.append('<option value="' + options[i] + '">' + options[i] + '</option')
+    }
+    ret.append(selectElt)
+    return ret
+  }
+
+  $("document").ready(function () {
+    
+    //CREATE dbNumberDiv =====================================
+    //Create dropdown for discussion board number
+    let dbOptions = ["Select"]
+    Object.keys(discussionData).forEach(e => dbOptions.push("Module " + e))
+    let dbNumberDiv = newDropdownDiv("dbNumberDiv", "Discussion #: ", dbOptions) 
+    $("#mainForm").append(dbNumberDiv)
+    
+    $("#dbNumberDivDropdown").change(function () {
+      //Delete all child divs, if any
+      dbNumberDiv.children("div").remove()
+      
+      //Create new child div
+      let val = this.value
+      if (val == "Select") {
+        selectedDiscussionIndex = null;
+        selectedDiscussion = null;
+      } else {
+        selectedDiscussionIndex = Number(val.split(" ")[1])
+        selectedDiscussion = discussionData[selectedDiscussionIndex]
+      }
+      
+      if (selectedDiscussion !== null) {
+        //CREATE replyTypeDiv ===================
+        //Create dropdown for reply type
+        let replyTypeOptions = [
+          "Select",
+          "Long Reply (Write 1, Due " + selectedDiscussion.longReplyDueDate + ")",
+          "Medium Reply (Write 3, Due " + selectedDiscussion.mediumReplyDueDate + ")",
+          "Short Reply (Write to all remaining peers, Due " + selectedDiscussion.shortReplyDueDate + ")",
+        ]
+        let replyTypeDiv = newDropdownDiv("replyTypeDiv", "Reply Type: ", replyTypeOptions)
+        dbNumberDiv.append( replyTypeDiv )
+        $("#replyTypeDivDropdown").change(function(){
+          //Delete all child divs, if any
+          $("#replyTypeDiv").children("div").remove()
+          
+          //Create new child divs
+          if(this.value.startsWith("Long Reply"))createLongReply();
+          if(this.value.startsWith("Medium Reply"))createMediumReply();
+          if(this.value.startsWith("Short Reply"))createShortReply();
+        })
+      }
+
+    })
+  })
+  
+  function createLongReply() {
+    let replyDiv = $("<div></div>").attr("id", "replyDiv")
+    
+    longAnswerWordCount = 0
+    
+    updateLongAnswerWordCount = () => {
+      longAnswerWordCount = 0
+      let v1 = $("#pwExplain").val()
+      let v2 = $("#gedExplain").val()
+      let combined = v1 + " " + v2
+      Countable.count(combined, (result)=>{
+        longAnswerWordCount = result.words
+        $("#wordCount").text("⠀Total word count: " + longAnswerWordCount + " / 200")
+      })
+    }
+    
+    generateLongAnswer = () => {
+      let pwExplainVal = $("#pwExplain").val()
+      let gedExplainVal = $("#gedExplain").val()
+      let inputAnswerDescriptionVal = $("#inputAnswerDescription").val()
+      let nameVal = $("#studentName").val()
+      let proceed = true
+      if(nameVal == '' || pwExplainVal == '' || gedExplainVal == '' || inputAnswerDescriptionVal == '' ){
+        proceed = confirm("Warning: Some fields have been left blank. Continue?") 
+      }
+      if(longAnswerWordCount < 200)
+        proceed = confirm("Warning: Your answer has less than 200 words. Continue?")
+      if(proceed){
+        let longAnswer = "Long Reply: " + $("#answerSlider").val() + "--" + inputAnswerDescriptionVal
+        longAnswer += "\n\nPW: \"" + selectedDiscussion.PW + "\""
+        longAnswer += "\n\n" + pwExplainVal
+        longAnswer += "\n\nGED: \"" + selectedDiscussion.GED + "\""
+        longAnswer += "\n\n" + gedExplainVal
+        longAnswer += "\n\n" + nameVal
+        $("#longAnswerGeneratedPost").val(longAnswer)
+      }
+    }
+    
+    let longReplyContinue = () => {
+      $("#longReplyContinue").remove()
+      let appendToReplyDiv = [
+        $(`<label for="inputAnswerDescription">Title/Brief Description of Your Answer: </label>`),
+        $(`<input type="text" id="inputAnswerDescription" class="longTextInput" placeholder="Answer">`),
+        $("<br>"),$("<br>"),$("<br>"),
+        $("<h3>Explain your answer...</h3>"),
+        $("<p><b>Paragraph 1:</b> While explaining your answer, meet this module's PW learning objective: <i>" + selectedDiscussion.PW + "</i></p>"),
+        $(`<textarea class="textArea" id="pwExplain" rows="10" cols="80" placeholder="Paragraph 1"></textarea>`).on('input', updateLongAnswerWordCount),
+        
+        $("<br>"),$("<br>"),$("<br>"),
+        $("<p><b>Paragraph 2:</b> While explaining your answer, meet this module's GED learning objective: <i>" + selectedDiscussion.GED + "</i></p>"),
+        $(`<textarea class="textArea" id="gedExplain" rows="10" cols="80" placeholder="Paragraph 2"></textarea>`).on('input', updateLongAnswerWordCount),
+        $("<br>"),$("<br>"),$("<br>"),
+        $("<h3>Final step...</h3>"),
+        $(`<button type="button" id="longAnswerGenerateButton">Generate My Post</button>`).click(generateLongAnswer),
+        $("<label for='longAnswerGenerateButton' id='wordCount'>⠀Total word count: 0 / 200</label>"),
+        $("<br>"),$("<br>"),
+        $(`<textarea class="textArea" id="longAnswerGeneratedPost" rows="30" cols="80" placeholder="Generated post goes here..."></textarea>`),
+      ]
+      appendToReplyDiv.forEach(element => { replyDiv.append(element) } )
+      
+      
+      let sliderVal = Number($("#answerSlider").val())
+      $("#inputAnswerDescription").attr("placeholder", answerPhrasePlaceholder(sliderVal))
+      $("#startOverButton").show()
+    }
+    
+    answerPhrasePlaceholder = (val) => {
+      let phrasePlaceholder = "Answer"
+      if(val == 1)phrasePlaceholder = "Ex. Buying/selling organs is fundamentally unethical"
+      if(within(val, 2, 4))phrasePlaceholder = "Ex. Organ markets are flawed in practice"
+      if(val == 5)phrasePlaceholder = "Ex. The answer depends on the ethical principles you start with"
+      if(within(val, 6, 8))phrasePlaceholder = "Ex. Buying/selling organs is acceptable in most cases"
+      if(val == 9)phrasePlaceholder = "Ex. Organ markets are essential"
+      return phrasePlaceholder
+    }
+    
+    onAnswerSliderChange = function(val){
+      let descriptionText = val + "/9 = "
+      if(val == 1)descriptionText += "Strong No"
+      if(within(val, 2, 4))descriptionText += "No"
+      if(val == 5)descriptionText += "Neutral/Undecided/On-the-fence"
+      if(within(val, 6, 8))descriptionText += "Yes"
+      if(val == 9)descriptionText += "Strong Yes"
+      $("#answerSliderLabel2").text(descriptionText)
+      $("#inputAnswerDescription").attr("placeholder", answerPhrasePlaceholder(val))
+    }
+    
+    let appendToReplyDiv = [
+      $("<br>"),
+      $("<h2></h2>").text("Discussion " + selectedDiscussionIndex + ": Long Reply").attr("id","longReplyHeader"),
+      $("<p><b>Target Question:</b> " + selectedDiscussion.targetQuestion + "</p>"),
+      $("<label for=\"answerSlider\" id=\"answerSliderLabel1\">Your Answer: </label>"),
+      $("<input type=\"range\" min=\"1\" max=\"9\" value=\"5\" id=\"answerSlider\">"),
+      $("<label for=\"answerSlider\" id=\"answerSliderLabel2\">5/9 = Neutral/Undecided/On-the-fence</label>"),
+      $("<br>"), $("<br>"),
+      $("<button type='button' id=\"longReplyContinue\">Continue</button>").click( longReplyContinue )
+    ]
+    
+    appendToReplyDiv.forEach(element => { replyDiv.append(element) } )
+    $("#replyTypeDiv").append( replyDiv )
+    
+    $("#answerSlider").attr("oninput", "onAnswerSliderChange(this.value)")
+    
+    
+  }
+  
+  function createMediumReply() {
+    $("#startOverButton").show()
+    
+    let replyDiv = $("<div></div>").attr("id", "replyDiv")
+    
+    let approachChoices = [
+      "Select",
+      "Approach A: Problematic",
+      "Approach B: Agree",
+      "Approach C: Interesting"
+    ]
+    
+    let approachAChoices = [
+      "Select",
+      "(A1) Peer's reasoning is false",
+      "(A2) Peer's reasoning is mistaken",
+      "(A3) There are important considerations that undermine peer's conclusion"
+    ]
+    
+    medWordCount = 0
+    updateMediumAnswerWordCount = () => {
+      let medReplyAnswerVal = $("#medReplyAnswer").val()
+      Countable.count(medReplyAnswerVal, (result)=>{
+        medWordCount = result.words - 5
+        if(medWordCount < 0)medWordCount = 0
+        $("#wordCountMed").text("⠀Total word count: " + medWordCount + " / 100")
+      })
+    }
+    
+    generateMedAnswer = () => { 
+      let proceed = true
+      if(medWordCount < 100)proceed = confirm("Warning: You wrote less than 100 words. Proceed?")
+      if(proceed){
+        let generatedPost = "Medium Reply\n\n" + $("#approachDivDropdown").val() + "\n\nHi " + $("#peerName").val() + ",\n\n" + $("#medReplyAnswer").val() + "\n\n" + $("#studentName").val()
+        $("#medAnswerGeneratedPost").val(generatedPost)
+      }
+    }
+    
+    let appendToReplyDiv = [
+      $("<br>"),
+      $("<h2></h2>").text("Discussion " + selectedDiscussionIndex + ": Medium Reply").attr("id","longReplyHeader"),
+      $("<p>Respond to a peer's long post. <b>NOTE:</b> For each discussion, you must write one medium reply with each approach.</p>"),
+      $(`<label for="peerName">Peer Name: </label>`),
+      $(`<input id="peerName" type="text" class="input-lg"></input>`),
+      newDropdownDiv("approachDiv", "Choose an approach: ", approachChoices),
+      newDropdownDiv("approachADiv", "Choose one: ", approachAChoices),
+      $(`<p id="approachDescription"></p>`),
+      $(`<textarea class="textArea" id="medReplyAnswer" rows="20" cols="80" placeholder="Answer here">(Wait--Choose an approach to continue)</textarea>`).on('input', updateMediumAnswerWordCount),
+      $("<br>"),$("<br>"),$("<br>"),
+      $("<h3>Final step...</h3>"),
+      $(`<button type="button" id="medAnswerGenerateButton">Generate My Post</button>`).click(generateMedAnswer),
+      $("<label for='medAnswerGenerateButton' id='wordCountMed'>⠀Total word count: 0 / 100</label>"),
+      $("<br>"),$("<br>"),
+      $(`<textarea class="textArea" id="medAnswerGeneratedPost" rows="30" cols="80" placeholder="Generated post goes here..."></textarea>`),
+    ]
+    appendToReplyDiv.forEach(element => { replyDiv.append(element) } )
+    $("#replyTypeDiv").append( replyDiv )
+    
+    $("#approachADiv").hide()
+    
+    $("#approachDivDropdown").change(()=> {
+      let newVal = $("#approachDivDropdown").val()
+      let newApproachDescription = ""
+      if(newVal.startsWith("Approach A")){
+        newApproachDescription = "Write about your peer's views/arguments that you find problematic."
+        $("#approachADiv").show()
+      } else {
+        $("#approachADiv").hide()
+      }
+      if(newVal.startsWith("Approach B"))
+        newApproachDescription = "Write about your peer's views/arguments that you basically agree with. Complete B1 and B2."
+      if(newVal.startsWith("Approach C"))
+        newApproachDescription = "Write about your peer's views/arguments that you find interesting, but you neither agree nor disagree with. Complete C1, C2, C3, and C4."
+      $("#approachDescription").text(newApproachDescription)
+      
+      updateMedReplyAnswer()
+    })
+    $("#approachADivDropdown").change(()=>{
+      updateMedReplyAnswer();
+    })
+    
+    updateMedReplyAnswer = function(){
+      let proceed = true;
+      if(medWordCount > 35)proceed = confirm("Switch to new approach? Warning: This will erase everything you've typed so far.")
+      if(proceed){
+        
+        let approachVal = $("#approachDivDropdown").val()
+        let approachAVal = $("#approachADivDropdown").val()
+        let newText = ""
+        if(approachVal == "Select"){
+          newText = "(Wait--Choose an approach to continue)"
+        }
+        if(approachVal.startsWith("Approach A")){
+          if(approachAVal == "Select"){
+            newText = "(Wait--Choose a sub-approach to continue)"
+          }
+          if(approachAVal.startsWith("(A1)")){
+            newText = "(A1) I think your conclusion does not follow because your reasons are false.\n\n[Explain here]"
+          }
+          if(approachAVal.startsWith("(A2)")){
+            newText = "(A2) I think your conclusion does not follow because your reasoning is mistaken.\n\n[Explain here]"
+          }
+          if(approachAVal.startsWith("(A3)")){
+            newText = "(A3) I think there are other important considerations that tend to undermine the conclusion.\n\n[Explain here]"
+          }
+        }
+        if(approachVal.startsWith("Approach B")){
+          newText = "(B1) Ways in which your views might reasonably be criticized:\n\n[write here]\n\n(B2) How these criticisms can actually be met:\n\n[write here]"
+        }
+        if(approachVal.startsWith("Approach C")){
+          newText = "(C1) The strongest considerations in favor of your view:\n\n[write here]\n\n(C2) The strongest considerations against your view\n\n[write here]\n\n(C3)Why I remain undecided:\n\n[write here]\n\n(C4) What would be required for me to make up my mind:\n\n[write here]"
+        }
+        $("#medReplyAnswer").val(newText)
+        updateMediumAnswerWordCount();
+        
+      }
+      
+    }
+  }
+  
+  function createShortReply() {
+    $("#startOverButton").show()
+    let replyDiv = $("<div></div>").attr("id", "replyDiv")
+    let appendToReplyDiv = [
+      $("<br>"),
+      $("<h2></h2>").text("Discussion " + selectedDiscussionIndex + ": Short Reply").attr("id","longReplyHeader"),
+      $("<p>Write 1+ sentences commenting on your peer's 'Long-Reply' post to demonstrate you read their post. This is the only step.</p>"),
+      $(`<textarea class="textArea" id="shortReplyAnswer" rows="10" cols="80"></textarea>`),
+    ]
+    appendToReplyDiv.forEach(element => { replyDiv.append(element) } )
+    $("#replyTypeDiv").append( replyDiv )
+    let srav = "Short Reply\n\nHi [Peer Name],\n\n[1+ sentences here]\n\n[Your Name]"
+    $("#shortReplyAnswer").val(srav)
+    
+  }
+  
+  function within(val, a, b){
+    return val >= a && val <= b
+  }
+  
+  function confirmReload(){
+    let proceed = confirm("Start over? All your progress will be erased.")
+    if(proceed)window.location.reload()
+  }
+  
+  selectedDiscussion = null;
+  selectedDiscussionIndex = null;
+</script>
+
+<body>
+  
+  <h1>📎Phil 104 Discussion Board Helper</h1>
+  <p class="inline">A step-by-step guide for writing Discussion posts for Phil 104.</p>
+  <br><br>
+  <form id="mainForm">
+    <label for="studentName">Your Name:</label>
+    <input type="text" id="studentName" class="input-lg">
+  </form>
+  <br><br>
+  <button id="startOverButton" hidden="true" onclick="confirmReload()">Start Over</button>
+</body>
+<style>
+  body {
+    margin: 30px;
+  }
+
+  p, h1, h2, h3, label, a {
+    word-wrap: break-word;
+    font-family: sans-serif;
+  }
+  
+  h2 {
+    margin-top: 0;
+  }
+  
+  .longTextInput {
+    width: 500px;
+  }
+  
+  .textArea {
+    line-height: 1;
+    font-family: sans-serif;
+  }
+  
+  .inline {
+    display: inline;
+  }
+</style>
+
+</html>

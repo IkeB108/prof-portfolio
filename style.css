@@ -21,6 +21,7 @@ html {
   --software-grid-cell-highlight-color: #ffffff; */
   
   --header-background-color: #050213;
+  --header-background-hover-color: #373247;
   --body-background-color: #171428;
   --project-card-background-color: rgba(216, 213, 239, 0.15);
   --text-color: #D8D5EF;
@@ -81,9 +82,56 @@ hr {
   margin-right: 20px;
 }
 
-#pageTitle {
+.page-title {
   margin-top: 15px;
   margin-bottom: 0px;
+  text-wrap:nowrap;
+  font-family: timeBurner, sans-serif;
+  font-weight: 100;
+  font-size: min(2.7rem, 7vw);
+}
+
+.page-header-for-project-description {
+  background-color: var(--header-background-color);
+  margin: 0 0;
+  padding: 20px 50px;
+  display: flex;
+  align-items:center;
+  
+  position: relative;
+}
+
+.page-header-for-project-description:hover {
+  background-color: var(--header-background-hover-color);
+}
+
+.page-header-for-project-description a {
+  display: block;
+  position: absolute;
+  text-decoration: none;
+  
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+.page-header-profile-image {
+  height: 50px;
+  margin-left: 30px;
+}
+
+.header-back-arrow {
+  height: 20px;
+}
+
+.page-title-for-project-description {
+  margin: 0 0;
+  margin-left:30px;
   text-wrap:nowrap;
   font-family: timeBurner, sans-serif;
   font-weight: 100;
@@ -94,30 +142,29 @@ hr {
   margin: 0;
 }
 
-#introductory-section {
+#introductorySection {
   /* this is a <header> that extends to left & right edges of screen */
   /* elements in here should be contained in a smaller area */
   background-color: var(--header-background-color);
   /* padding: 70px max(calc( (100vw - 730px)/2 ), 30px ); */
 }
 
-#introductory-section-body {
+#introductorySectionBody {
   max-width: 700px;
   padding: 70px 50px;
   margin: 0 auto;
 }
 
-#project-showcase-section {
+.main-body {
   max-width: 700px;
   margin: 0 auto;
-  text-align: justify;
   padding-top: 70px;
   padding-left: 50px;
   padding-right: 50px;
   padding-bottom: 70px;
 }
 
-#project-showcase-h2 {
+#projectShowcaseH2 {
   margin: 0px;
 }
 
@@ -157,13 +204,13 @@ hr {
   margin: min(1vw, 8px) 0px; /* vertical margin should match grid cell padding */
 }
 
-#grid-and-profile-flex-box {
+#gridAndProfileFlexBox {
   display: flex;
   height: 30vw;
   max-height: 200px;
 }
 
-#software-grid-title {
+#softwareGridTitle {
   margin-left: auto;
   margin-right: min(1vw, 8px); /* margin-right should match grid cell padding */
   margin-top: 15px;
@@ -173,7 +220,7 @@ hr {
   color:var(--accent-color)
 }
 
-#title-flex-box {
+#titleFlexBox {
   display: flex;
 }
 
@@ -184,11 +231,11 @@ hr {
   min-width: 50px;
   min-height: 50px;
 }
-#software-grid-container {
+#softwareGridContainer {
   aspect-ratio: 6/4;
   margin-left: auto;
 }
-#software-grid {
+#softwareGrid {
   /* padding-left: 20px; */
   /* min-width: 300px; */
   margin-left: auto;
@@ -223,4 +270,70 @@ hr {
 .software-grid-cell > img {
   width: 100%;
   object-fit: contain;
+}
+li {
+  margin-bottom: 0.4rem;
+}
+li b {
+  font-weight: 900;
+}
+
+/* .project-description-section-header {
+  font-family: timeBurner, sans-serif;
+  font-weight: 100;
+} */
+ 
+h1.project-description-section-header {
+  font-size: 2rem;
+  margin:0;
+}
+
+.project-container-outer {
+  border-style: solid;
+  border-color: #595475;
+  border-width: min(3vw, 20px);
+  border-radius: min(3vw, 20px);
+  box-shadow: 0px 0px 20px black;
+  height: 300px;
+  box-sizing:border-box;
+  position:relative;
+}
+
+.project-container-outer > embed {
+  width: 100%;
+  height: 100%;
+}
+
+.hidden-until-hover {
+  display: none;
+}
+
+.hidden-until-hover:hover {
+  display:inherit;
+}
+
+.expand-button {
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  position: absolute;
+  /* bottom:  0px;
+  left: 0px; */
+  bottom: min(2vw, 15px);
+  left: min(2vw, 15px);
+  cursor:pointer;
+}
+
+.expand-button img {
+  width: 100%; 
+}
+
+.project-description-title-container {
+  margin: 30px 0px;
+  display:flex;
+  align-items:center;
+}
+.project-description-title-image {
+  height:min(10vw, 85px);
+  margin-left: auto;
 }
