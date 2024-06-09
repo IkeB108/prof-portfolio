@@ -322,10 +322,13 @@ h1.project-description-section-header {
   bottom: min(2vw, 15px);
   left: min(2vw, 15px);
   cursor:pointer;
+  
+  border-radius: 5px;
+  border-width: 1px;
 }
 
 .expand-button img {
-  width: 100%; 
+  width: 100%;
 }
 
 .project-description-title-container {
