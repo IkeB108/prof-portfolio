@@ -48,7 +48,6 @@ html {
 body {
   color: var(--text-color);
   font-family: sans-serif;
-  text-size-adjust: none;
   margin: 0;
   background-color: var(--body-background-color);
   font-weight:100;
@@ -84,6 +83,7 @@ hr {
   margin-bottom: 10px;
   margin-right: 10px;
   font-size: large;
+  text-wrap: balance;
 }
 
 .project-description {
@@ -173,7 +173,7 @@ hr {
 }
 
 .main-body {
-  max-width: 700px;
+  max-width: 800px;
   margin: 0 auto;
   padding-top: 70px;
   padding-left: 20px;
@@ -198,8 +198,17 @@ hr {
   font-weight:bold;
 }
 
+button.hyperlink {
+  background:none;
+  border-style: none;
+  margin:0;
+  padding:0;
+  font-size: 1rem;
+}
+
 .hyperlink:hover {
-  color: var(--accent-color-2)
+  color: var(--accent-color-2);
+  text-decoration: underline;
 }
 
 .project-arrow-container {
@@ -299,11 +308,22 @@ h1.project-description-section-header {
   font-size: 2rem;
   margin:0;
   margin-right: 20px;
+  text-wrap:balance;
+}
+  
+h1.project-description-section-header a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+h1.project-description-section-header a:hover {
+  color: var(--accent-color-2);
+  text-decoration: underline;
 }
 
 .project-container-outer {
   border-style: solid;
-  border-color: var(--project-card-background-color);
+  border-color: var(--header-background-hover-color);
   border-width: min(3vw, 20px);
   border-radius: min(3vw, 20px);
   box-shadow: 0px 0px 20px black;
@@ -360,4 +380,25 @@ h1.project-description-section-header {
 .project-description-title-image {
   height: 100%;
   object-fit: contain;
+}
+
+.external-link-icon {
+  height: 1.4rem;
+  margin-left: 0.4rem;
+}
+
+.external-link-icon-path {
+  fill: none;
+  stroke: var(--text-color);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 100px;
+}
+
+.project-description-section-header:hover path {
+  fill: none;
+  stroke: var(--accent-color-2);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 100px;
 }
