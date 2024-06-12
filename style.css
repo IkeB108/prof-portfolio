@@ -33,6 +33,10 @@ html {
   --header-background-hover-color: #4D495A;
   --body-background-color: #0a0a0a;
   --project-card-background-color: #302e38;
+  
+  --project-card-background-lighter:#4D495A;
+  --project-card-background-lightest:#7c7988;
+  
   --text-color: #ced1d5;
   --project-card-highlight-color: #ac694d;
   --software-grid-cell-highlight-color: #ced1d5;
@@ -124,16 +128,10 @@ hr {
 .page-header-for-project-description a {
   display: block;
   position: absolute;
-  text-decoration: none;
-  
-  display: block;
-  position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  text-decoration: none;
-  color: inherit;
 }
 
 .page-header-profile-image {
@@ -323,7 +321,7 @@ h1.project-description-section-header a:hover {
 
 .project-container-outer {
   border-style: solid;
-  border-color: var(--header-background-hover-color);
+  border-color: var(--project-card-background-lighter);
   border-width: min(3vw, 20px);
   border-radius: min(3vw, 20px);
   box-shadow: 0px 0px 20px black;
@@ -401,4 +399,57 @@ h1.project-description-section-header a:hover {
   stroke-linecap: round;
   stroke-linejoin: round;
   stroke-width: 100px;
+}
+
+.full-project-hyperlink {
+  padding: 5px;
+  position: absolute;
+  margin: 0;
+  bottom: min(2vw, 15px);
+  right: min(2vw, 15px);
+  cursor:pointer;
+  
+  background-color:var(--project-card-background-lighter);
+  color:white;
+  font-weight:bold;
+  text-decoration:none;
+  /* border-color:black;
+  border-style:solid;
+  border-width: 1px; */
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+}
+
+.full-project-hyperlink svg {
+  height:0.9em;
+  margin-left:0.4em;
+}
+
+.full-project-hyperlink path {
+  stroke:white;
+}
+
+.project-container-covered-by-anchor:hover .full-project-hyperlink, .full-project-hyperlink:hover {
+  background-color: var(--project-card-background-lightest);
+  text-decoration: underline;
+  /* border-style:none; */
+}
+
+.anchor-covering-project-container {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.project-container-covered-by-anchor:hover {
+  border-color:var(--project-card-background-lightest)
+}
+
+.project-container-image {
+  object-fit:contain;
+  height:100%;
+  width:100%;
 }
