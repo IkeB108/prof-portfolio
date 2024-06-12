@@ -275,6 +275,17 @@ function setMult(a, b){
 }
 
 function getNumbersToSum(){
+  
+  if(multa >= multb){
+    mult_bigger = multa;
+    mult_smaller = multb;
+  }
+  if(multb > multa){
+    mult_bigger = multb;
+    mult_smaller = multa;
+  }
+  
+  
   var mas = mult_bigger + ''
   var mbs = mult_smaller + ''
   multa_digits = mas.length;
