@@ -29,10 +29,10 @@
 </head>
 <body onload="onLoad()">
   <div>
-    <br>
-    <button onclick="openAsPopup()" id="openAsPopupButton">Open As Popup Window</button> 
+    <p id="notification" style="font-size:1em;font-weight:bold;"></p><br>
+    <p style="font-size:1em;" id="clickAnyToStart">Click any button to start</p>
+    <button onclick="openAsPopup()" id="openAsPopupButton">Open As Popup Window</button>
     <br id="brUnderPopupButton">
-    <p id="notification" style="font-size:1em;font-weight:bold;"></p>
   </div>
   <script src="https://code.jquery.com/jquery-3.7.0.min.js" crossorigin="anonymous"></script>
   <script>
@@ -49,13 +49,13 @@
       let colorRow = colors[i].split(" ")
       for(let j in colorRow){
         if(colorRow[j] == ":"){
-          $("div").prepend( $(`<p>•</p>`) )
+          $("div").append( $(`<p>•</p>`) )
         } else {
           let b = $(`<button class="paletteButton"></button>"`)
           b.css("background-color", colorRow[j])
           b.attr("id", colorRow[j])
           b.attr("onclick", `copyColor(this)`)
-          $("div").prepend(b);
+          $("div").append(b);
           // console.log("DONE")
         }
       }
@@ -67,7 +67,7 @@
       }
       
       if(gotClipboardPermission){
-        console.log("Cofnirm")
+        $("#clickAnyToStart").css("display", "none")
         navigator.clipboard.writeText(obj.id)
         $("#notification").text(`Copied ${obj.id} to your clipboard`)
         $("#notification").css("color", `rgb(0,0,0,1)`)
