@@ -191,7 +191,6 @@ hr {
 
 .hyperlink {
   cursor: pointer;
-  text-decoration: none;
   color: var(--accent-color);
   font-weight:bold;
 }
