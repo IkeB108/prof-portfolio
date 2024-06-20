@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 101.73 163.91">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fdf5a2;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #85cdb4;
+      }
+
+      .cls-3 {
+        fill: #f3a482;
+      }
+
+      .cls-4 {
+        fill: #7c7988;
+      }
+
+      .cls-5 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <g>
+      <rect class="cls-4" x="2" y="20.85" width="90.45" height="141.06" rx="10.52" ry="10.52"/>
+      <path class="cls-5" d="M2,62.67h90.45v88.72c0,5.81-4.71,10.52-10.52,10.52H12.52c-5.81,0-10.52-4.71-10.52-10.52V62.67h0Z"/>
+      <path class="cls-2" d="M2,62.67h29.9v99.24H12.52c-5.81,0-10.52-4.71-10.52-10.52V62.67h0Z"/>
+      <rect class="cls-3" x="31.9" y="62.67" width="29.9" height="99.24"/>
+    </g>
+  </g>
+  <g id="Layer_4" data-name="Layer 4">
+    <polygon class="cls-1" points="79.5 0 85.51 19.09 101.73 26.16 85.51 33.22 79.5 52.31 73.5 33.22 57.28 26.16 73.5 19.09 79.5 0"/>
+  </g>
+</svg>

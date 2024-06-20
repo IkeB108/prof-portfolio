@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="100" height="168" viewBox="0 0 100 168">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #7c7988;
+      }
+
+      .cls-1, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-2, .cls-4, .cls-5 {
+        stroke: #302e38;
+      }
+
+      .cls-2, .cls-4, .cls-5, .cls-6 {
+        stroke-linejoin: round;
+        stroke-width: 4px;
+      }
+
+      .cls-4 {
+        fill: #f3a482;
+      }
+
+      .cls-3 {
+        fill: #ced1d5;
+      }
+
+      .cls-5 {
+        fill: #85cdb4;
+      }
+
+      .cls-6 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+      }
+    </style>
+  </defs>
+  <rect class="cls-3" y="137.02" width="100" height="30.98" rx="6.98" ry="6.98"/>
+  <g>
+    <rect class="cls-4" x="11.3" y="143.25" width="18.52" height="18.52"/>
+    <rect class="cls-5" x="40.74" y="143.25" width="18.52" height="18.52"/>
+    <rect class="cls-2" x="70.18" y="143.25" width="18.52" height="18.52"/>
+  </g>
+  <rect class="cls-1" width="100" height="133.13" rx="6.98" ry="6.98"/>
+  <polyline class="cls-6" points="20.56 91.83 41.14 59.13 55.55 75.48 82.99 34.89"/>
+</svg>
