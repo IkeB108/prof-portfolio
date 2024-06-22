@@ -8,7 +8,16 @@
   <link rel="preload" href="style.css" as="style">
   <link rel="stylesheet" href="style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <!-- TODO: Put style directly here to avoid Flash of Unstyled Content (FOUC)  -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+      
+    }
+    .navlink {
+      margin: 0px 10px;
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body onload="onBodyLoad()">
   
@@ -125,9 +134,13 @@
         <p id="softwareGridTitle" class="accent-color">HTML<br>Strong experience</p>
       </div>
       <p class="accent-color" id="selfSummary">
-        Coding, teaching, and creative problem solving.
+        Coding, videos, visual teaching, and creative problem solving.
       </p>
-      <button class="hyperlink" style="font-weight:100" onclick="onEmailClick()">ikebot33@protonmail.com</a>
+      <button class="hyperlink" style="font-weight:100" onclick="onEmailClick()">ikebot33@protonmail.com</button>
+      
+      <p>
+        <a href="https://docs.google.com/document/d/1loejswklvyEDs4cdVkdKPUqlclTpvnbdP4yEtlORJuE/edit?usp=sharing" class="hyperlink navlink" style="margin-left: 0px;">Resume</a>•<a href="https://www.youtube.com/c/ikebot" class="hyperlink navlink">YouTube</a>•<a href="https://www.ikebot.dev" class="hyperlink navlink">ikebot.dev</a>•<button class="hyperlink navlink" style="margin: 0px 10px;" onclick="onEmailClick()">Contact</button>
+      </p>
     </div>
   </header>
   
@@ -296,7 +309,19 @@
         <img src="svg-icons/arrow-right.svg" alt="Right Arrow" class="project-arrow">
       </div>
     </a>
-  <br><br>
+  
+    <!-- RESUME -->
+    <h3 class="project-category-header">📄 Résumé</h3>
+    <a href="https://docs.google.com/document/d/1loejswklvyEDs4cdVkdKPUqlclTpvnbdP4yEtlORJuE/edit?usp=sharing" class="project-card">
+      <img src="images/profile.svg" alt="Large icon of a male with wavy hair and a button-up shirt" class="project-card-image">
+      <div class="project-title-and-description-container">
+        <h4 class="project-title">Résumé</h4>
+        <p class="project-description">View my résumé.</p>
+      </div>
+      <div class="project-arrow-container">
+        <img src="svg-icons/arrow-right.svg" alt="Right Arrow" class="project-arrow">
+      </div>
+    </a>
   
   </section>
   
