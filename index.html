@@ -42,6 +42,10 @@
               <img src="svg-icons/Javascript.svg" alt="Javascript">  
             </div>
             
+            <div class="software-grid-cell" role="img" aria-label="Figma: 4 months experience" id="Figma_softwareIcon" onmouseover="onSoftwareCellMouseOver(this)">
+              <img src="svg-icons/Figma.svg" alt="Figma">  
+            </div>
+            
             <div class="software-grid-cell" role="img" aria-label="P5JS: 8 years experience" id="P5JS_softwareIcon" onmouseover="onSoftwareCellMouseOver(this)">
               <img src="svg-icons/P5JS.svg" alt="P5JS">  
             </div>
@@ -121,10 +125,6 @@
             <div class="software-grid-cell" role="img" aria-label="Adobe Animate: Working knowledge" id="Adobe Animate_softwareIcon" onmouseover="onSoftwareCellMouseOver(this)">
               <img src="svg-icons/Adobe Animate.svg" alt="Adobe Animate">  
             </div>
-            
-            <div class="software-grid-cell" role="img" aria-label="Adobe Photoshop: Working knowledge" id="Adobe Photoshop_softwareIcon" onmouseover="onSoftwareCellMouseOver(this)">
-              <img src="svg-icons/Adobe Photoshop.svg" alt="Adobe Photoshop">  
-            </div>
           </div>
           
         </div>
@@ -149,6 +149,18 @@
     <h2 id="projectShowcaseH2">Project Showcase</h2>
     <p>I solve practical problems and explain technical concepts with creative approaches that leverage my coding skills, analytical skills, and explanatory skills. Here are some examples.</p>
     
+    <h3 class="project-category-header">🧑‍💻 Collaborations</h3>
+    <p>Projects I've done on a team of volunteers.</p>
+    <a href="al-jabr.html" class="project-card">
+      <img src="project-icons/al-jabr.svg" alt="Calculator" class="project-card-image">
+      <div class="project-title-and-description-container">
+        <h4 class="project-title">Al Jabr</h4>
+        <p class="project-description">Online platform for K-11 students to learn math from hands-on practice problems and lectures.</p>
+      </div>
+      <div class="project-arrow-container">
+        <img src="svg-icons/arrow-right.svg" alt="Right Arrow" class="project-arrow">
+      </div>
+    </a>
     <!-- EXPLANATORY PROJECTS -->
     <h3 class="project-category-header">💬 Explanatory Projects</h3>
     <p>Interactive web apps and other projects that clarify and break down complicated topics. Click on any project to see more.</p>
@@ -351,7 +363,7 @@ Kdenlive:Strong experience
 Hitfilm Express:Working knowledge
 Krita:Strong experience
 Adobe Animate:Working knowledge
-Adobe Photoshop:Working knowledge`.split("\n")
+Figma: 4 months experience`.split("\n")
 softwareExp = {}
 softwareIcons.forEach( (e)=> { 
   let line = e.split(":")

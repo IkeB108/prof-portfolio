@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="preload" href="style.css" as="style">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+    embedExpanded = false;
+    function expandEmbed(){
+      embedExpanded = !embedExpanded
+      let container = document.querySelector(".project-container-outer")
+      if(embedExpanded){
+        container.style.height = container.dataset.expandedheight
+      } else {
+        container.style.height = container.dataset.unexpandedheight
+      }
+    }
+  </script>
+  <title>Ike Bischof</title>
+  <link rel="icon" type="image/x-icon" href="images/profile-favicon.ico">
+</head>
+<body>
+  <header class="page-header-for-project-description">
+    <a href="/" aria-label="Return to home page"></a>
+    <img src="svg-icons/arrow-left.svg" alt="Left Arrow" class="header-back-arrow">
+    <img src="images/profile-thicker.svg" alt="Large icon of a male with wavy hair and a button-up shirt" class="page-header-profile-image">
+    <h1 class="page-title-for-project-description">Ike Bischof</h1>
+  </header>
+  <section class="main-body">
+    
+    <div class="project-container-outer" data-expandedheight="800px" style="height: 400px; display: flex; justify-content: center; background-color: var(--project-card-background-lighter)" data-unexpandedheight="300px">
+      <img src="images/al-jabr/al-jabr-problem-interface.png" alt="A math problem above an onscreen keyboard, with an AI chat window to the left" style="height: 100%; width: 100%; object-fit: contain; object-position: center;">
+    </div>
+    
+    <div class="project-description-title-container">
+      <div>
+        <h1 class="project-description-section-header">
+          Al Jabr
+        </h1>
+        <p style="font-style:italic; color:var(--accent-color)">Volunteer work for a startup<br>Spring 2025</p>
+      </div>
+      <div class="project-description-title-image-wrapper">
+        <img src="project-icons/al-jabr.svg" alt="Calculator" class="project-card-image">
+      </div>
+    </div>
+    <h2 class="project-description-section-header">Problem and Solution</h2>
+    <ul>
+      <li><b>Problem: </b>K-11 Students in Uzbekistan learn math online via Qalan, an online platform which suffers from several issues: a non-kid friendly design, unresponsive layouts, glitches, and confusing architecture.</li>
+      <li><b>Solution: </b>Al Jabr, an alternative online learning platform with colorful, inviting kid-friendly design, intuitive architecture, and corrections to technical issues.</li>
+    </ul>
+    <h2 class="project-description-section-header">Description</h2>
+    <p>Volunteering for a small startup, I led a design team in using Figma to design Al Jabr, an alternative math education platform to Qalan. My work included:</p>
+    <p style="font-weight: bold; color:var(--accent-color-2)">Documentation</p>
+    <ul>
+      <li>Translating the project leads’ documentation into a sitemap</li>
+      <li>Collaborating with developers to write exact documentation about the details of every page and how features would work</li>
+      <li>UX writing: refining the terminology of features and page names to improve clarity and user friendliness</li>
+      <li>Writing survey questions for Qalan users to better understand how they use Qalan</li>
+    </ul>
+    <p style="font-weight: bold; color:var(--accent-color-2)">Design</p>
+    <ul>
+      <li>Creating plans for new information architecture and layouts</li>
+      <li>Using the Material 3 Design Kit as a base for the design</li>
+      <li>Designing pages for browsing topics, diagnostics tests, daily challenges, and more</li>
+      <li>Designing an onscreen keyboard interface for inputting answers to math problems</li>
+      <li>Designing a problem interface for viewing and answering math problems, including a help section for viewing a video lecture, an AI chat window, and a section for viewing the solution</li>
+      <li>Building a consistent design system for fonts, colors, buttons, and other elements</li>
+    </ul>
+    <p style="font-weight: bold; color:var(--accent-color-2)">Leadership</p>
+    <ul>
+      <li>Leading discussions in remote video calls</li>
+      <li>Delegating tasks among design team members</li>
+    </ul>
+    <h2 class="project-description-section-header">Skills Demonstrated</h2>
+    <p>Technical skills</p>
+    <ul>
+      <li>Figma</li>
+      <li>Technical writing</li>
+    </ul>
+    <p>Soft skills</p>
+    <ul>
+      <li>UI/UX design, interaction design, design system development, information architecture, UX writing, attention to detail</li>
+      <li>Collaboration between developers and designers</li>
+      <li>User research</li>
+      <li>Team leadership, task delegation</li>
+    </ul>
+    <h2 class="project-description-section-header">Sitemap</h2>
+    <p>Much of my work was translating the preexisting documentation into a visual sitemap in Figjam to communicate and clarify ideas between the designers and developers.</p>
+    <p>Creating the sitemap helped us identify gaps in the website's overall plan and figure out the next steps.</p>
+    <img style="width: 100%" src="images/al-jabr/al-jabr-sitemap.webp" alt="A tree diagram of the architecture of Al Jabr, as well as a sitemap that gives a rough idea of the layout of each page and how pages connect.">
+    <h2 class="project-description-section-header">Final Designs</h2>
+    <p>This is a sample of some of the designs we completed in Figma.</p>
+    <img style="width: 100%" src="images/al-jabr/al-jabr-problem-interface.png" alt="A math problem above an onscreen keyboard, with an AI chat window to the left">
+    <img style="width: 100%" src="images/al-jabr/al-jabr-dashboard.webp" alt="A dashboard on Al-Jabr with a section for viewing learning progress, a section for starting a daily challenge, a video lecture, and a leaderboard.">
+    <img style="width: 100%" src="images/al-jabr/al-jabr-daily-challenges.webp" alt="A list of daily challenges on Al Jabr">
+    <img style="width: 100%" src="images/al-jabr/al-jabr-calendar.webp" alt="A calendar on Al Jabr with dates marked with various colors.">
+    <img style="width: 100%" src="images/al-jabr/al-jabr-student-profile.webp" alt="A student profile page with profile information, account information, cashback information, and a leaderboard.">
+    <img style="width: 100%" src="images/al-jabr/al-jabr-upgrade-page.webp" alt="A page for upgrading to premium on Al Jabr">
+    
+  </section>
+</body>
+</html>
