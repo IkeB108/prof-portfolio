@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="preload" href="style.css" as="style">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+    embedExpanded = false;
+    function expandEmbed(){
+      embedExpanded = !embedExpanded
+      let container = document.querySelector(".project-container-outer")
+      if(embedExpanded){
+        container.style.height = container.dataset.expandedheight
+      } else {
+        container.style.height = container.dataset.unexpandedheight
+      }
+    }
+  </script>
+  <title>Ike Bischof</title>
+  <link rel="icon" type="image/x-icon" href="images/profile-favicon.ico">
+</head>
+<body>
+  <header class="page-header-for-project-description">
+    <a href="/" aria-label="Return to home page"></a>
+    <img src="svg-icons/arrow-left.svg" alt="Left Arrow" class="header-back-arrow">
+    <img src="images/profile-thicker.svg" alt="Large icon of a male with wavy hair and a button-up shirt" class="page-header-profile-image">
+    <h1 class="page-title-for-project-description">Ike Bischof</h1>
+  </header>
+  <section class="main-body">
+    
+    <noscript style="color:var(--accent-color);">It appears JavaScript is disabled in your browser. The project below may have limited or no functionality.<br><br></noscript>
+    
+    <div class="project-container-outer" style="height: auto;">
+    
+      
+      <img src="images/ws-browser.webp" alt="" style="width:100%; display:block;">
+      
+      <a class="full-project-hyperlink" href="project-copies/ws-browser/index.html?placeholderimages" target="_blank">
+        Open project in new tab
+        <svg viewBox="0 0 798.34 798.34">
+          <path id="Vector" class="external-link-icon-path" d="M282.79,96.56h-83.8c-52.15,0-78.24,0-98.16,10.15-17.52,8.93-31.75,23.16-40.68,40.68-10.15,19.92-10.15,46.01-10.15,98.16v353.82c0,52.15,0,78.21,10.15,98.13,8.93,17.52,23.16,31.78,40.68,40.7,19.9,10.14,45.96,10.14,98.01,10.14h354.11c52.04,0,78.07,0,97.97-10.14,17.52-8.92,31.8-23.2,40.73-40.72,10.14-19.9,10.14-45.93,10.14-97.98v-83.94M748.34,282.78V50M748.34,50h-232.78M748.34,50l-325.89,325.89"/>
+        </svg>
+      </a>
+      
+      
+    </div>
+    
+    <div class="project-description-title-container">
+      <div>
+        <h1 class="project-description-section-header">
+          <a href="project-copies/ws-browser/index.html?placeholderimages" target="_blank">Worksheet Solutions Browser
+            <svg class="external-link-icon" viewBox="0 0 798.34 798.34">
+              <path id="Vector" class="external-link-icon-path" d="M282.79,96.56h-83.8c-52.15,0-78.24,0-98.16,10.15-17.52,8.93-31.75,23.16-40.68,40.68-10.15,19.92-10.15,46.01-10.15,98.16v353.82c0,52.15,0,78.21,10.15,98.13,8.93,17.52,23.16,31.78,40.68,40.7,19.9,10.14,45.96,10.14,98.01,10.14h354.11c52.04,0,78.07,0,97.97-10.14,17.52-8.92,31.8-23.2,40.73-40.72,10.14-19.9,10.14-45.93,10.14-97.98v-83.94M748.34,282.78V50M748.34,50h-232.78M748.34,50l-325.89,325.89"/>
+            </svg>
+          </a>
+        </h1>
+        <p style="font-style:italic; color:var(--accent-color)">Workplace project<br>Spring 2025</p>
+      </div>
+      <div class="project-description-title-image-wrapper">
+        <img src="project-icons/ws-browser.svg" alt="" class="project-description-title-image">
+      </div>
+    </div>
+    <h2 class="project-description-section-header">Problem and Solution</h2>
+    <p>When I teach math to elementary students at my workplace, I correct students' worksheets using a website to browse answer keys. Since I do this in-class while teaching, it's critical that this process is as fast and smooth as possible. <br><br>However, the website we use can sometimes be slow to load and slow to navigate.</p>
+    <h3>Problem: Original Worksheet Browser</h3>
+    <p>The worksheet browser we use at my workplace suffers from a few inefficiencies <a class="hyperlink" href="ws-browser-original-example.html">(click here to try an interactive mockup)</a>.</p>
+    <p>Slow loading:</p>
+    <ul>
+      <li>⌛ Worksheets take a few seconds to load</li>
+      <li>⌛ Worksheet lists take a few seconds to load</li>
+    </ul>
+    <p>Slow navigation:</p>
+    <ul>
+      <li>🔍 Only allows browsing one subject level at a time</li>
+      <li>🚫 No search bar: requires manual scrolling or Ctrl+F to find a worksheet</li>
+      <li>👇 Small action buttons are less friendly for mobile and laptops</li>
+      <li>⿻ All worksheets open in a separate window, requiring the user to manage windows</li>
+      <li>🔍︎ Worksheet pdfs don't default to full-page view</li>
+    </ul>
+    <img src="images/ws-browser/compare-original-a.webp" alt="" style="width:100%; display:block;">
+    <br>
+    <img src="images/ws-browser/compare-original-b.webp" alt="" style="width:100%; display:block;">
+    <h3>Solution: New Worksheet Browser</h3>
+    <p>My solution was to design and build <a href="project-copies/ws-browser/index.html?placeholderimages" class="hyperlink">my own website</a> for browsing answer keys.</p>
+    <p>This tool doubles as a way for math trainers to record what worksheets our students were working on.</p>
+    <p>I made a rough sketch of the layout, which professional designer <a href="https://www.heuschmidt.io/" class="hyperlink">Paul Heuschmidt</a> refined into a professional and aesthetically pleasing design in Figma. Then, I built the website with React.</p>
+    <p>Fast loading:</p>
+    <ul>
+      <li>⚡ All worksheets load instantly</li>
+      <li>⚡ Worksheet list loads instantly</li>
+    </ul>
+    <p>Fast navigation:</p>
+    <ul>
+      <li>🖥️ All worksheets can be viewed on one screen, rather than separate windows</li>
+      <li>↔️ Navigate to any page with one click and drag</li>
+      <li>🔍 Search all levels at once, instead of only one</li>
+      <li>👇 Large selectable options are mobile and laptop friendly</li>
+      <li>📅 On-screen keypad for further convenience for mobile users</li>
+    </ul>
+    <p>Fast progress tracking:</p>
+    <ul>
+      <li>📝 Record what worksheets each student works on during class</li>
+      <li>📝 Record notes about what was done with each worksheet</li>
+      <li>🧩 This system uses Google Apps Script to integrate with our progress tracker spreadsheet</li>
+    </ul>
+    <img src="images/ws-browser/compare-new-a.webp" alt="" style="width:100%; display:block;">
+    <br>
+    <img src="images/ws-browser/compare-new-b.webp" alt="" style="width:100%; display:block;">
+    
+    <h2 class="project-description-section-header">Skills Demonstrated</h2>
+    <ul>
+      <li><b>Technical skills: </b>React, npm, git, HTML, CSS, Javascript, Google Apps Script, debugging, UX design, performance optimization, designing responsive layouts for all devices, prototyping, iterative design</li>
+      <li><b>Soft skills: </b>User research, user-centered design, collaborating and communicating design needs with a designer, creative problem-solving, organizational skills</li>
+    </ul>
+    <h2 class="project-description-section-header">Results</h2>
+    <ul>
+      <li>The new browser became an invaluable tool for teaching students math more easily and efficiently.</li>
+      <li>The new browser improves usability on tablets</li>
+    </ul>
+  </section>
+</body>
+</html>

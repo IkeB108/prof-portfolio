@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <title>Original WS Browser Demo</title>
+  <style>
+    body {
+      background-color: white;
+      padding: 10px;
+      max-width: 800px;
+      margin: 0 auto;
+      font-family: Arial, sans-serif;
+      border: 1px solid black;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    tr {
+      background-color: white;
+      color: black;
+      text-align: center;
+    }
+    th {
+      padding: 5px;
+    }
+    td {
+      padding: 5px;
+    }
+    .subject-level-select {
+      margin-bottom: 10px;
+      padding: 5px;
+      font-size: 16px;
+      width: 140px;
+    }
+    
+    #submit-level-select {
+      height: 32px;
+      background-color: rgb(52, 111, 189);
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      width: 80px;
+      margin-left: 20px;
+    }
+    .open-worksheet-button {
+      cursor: pointer;
+      width: 20px;
+      height: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+    }
+    .action-icon {
+      width: 10px;
+      height: 10px;
+    }
+  </style>
+</head>
+<body onload="onLoad()">
+  <h1>Original Worksheet Browser (Interactive Mockup)</h1>
+  <p>This mockup resembles the look and behavior of the original worksheet browser for demonstration purposes.</p>
+  <label for="subject-level">Subject Level:</label>
+  <select id="subject-level" name="subject-level" class="subject-level-select">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+  </select>
+  <button id="submit-level-select" onclick="onLevelClickSubmit()">Submit</button>
+  <table style="width: 100%; max-width: 500px; margin: 0 auto; border-collapse: collapse; border: 1px solid black;">
+    <tr style="background-color: rgb(52, 111, 189); color: white;">
+      <th>Worksheet ID</th>
+      <th>Action</th>
+    </tr>
+    <!-- <tr>
+      <td>Row 1, Col 1</td>
+      <td> <button class="open-worksheet-button" onclick="openWorksheet()"><img src="svg-icons/external-link-black.svg" alt="External link" class="action-icon"></button> </td>
+    </tr>
+    <tr>
+      <td>Row 2, Col 1</td>
+      <td>Row 2, Col 2</td>
+    </tr> -->
+  </table>
+  <script>
+    function onLoad(){
+      $.getJSON("project-copies/ws-browser/worksheetsWithoutPageBlobs.json", function(json){
+        allWorksheets = json
+        //get all worksheets from level 0
+        setTableToLevel(0)
+      })
+    }
+    
+    function onLevelClickSubmit(){
+      $("html").css("cursor", "progress")
+      $("#submit-level-select").css("cursor", "progress")
+      setTimeout( ()=> { //Timeout to simulate loading time
+        let levelInteger = parseInt($("#subject-level").val())
+        setTableToLevel(levelInteger)
+        //Remove css cursor property
+        $("html").css("cursor", "default")
+        $("#submit-level-select").css("cursor", "pointer")
+      }, 1200)
+    }
+    
+    function setTableToLevel(levelInteger){
+      //levelInteger is 0,1,2,3,4,5,6
+      $("table").find("tr:gt(0)").remove() //remove all rows except the header row
+      const levelWorksheets = allWorksheetsFromLevel(levelInteger)
+      for(let i = 0; i < levelWorksheets.length; i ++){
+        let worksheetID = levelWorksheets[i]
+        let newRow = `<tr><td>${worksheetID}</td><td>  <button class="open-worksheet-button" onclick="openWorksheet()"><img src="svg-icons/external-link-black.svg" alt="External link" class="action-icon"></button>  </td></tr>`
+        $("table").append(newRow)
+      }
+    }
+    
+    function allWorksheetsFromLevel(levelInteger){
+      //levelInteger is 0,1,2,3,4,5,6
+      const ret = []
+      levelInteger = "0" + levelInteger.toString()
+      const idIsLevel = function(id, level){
+        if(levelInteger == "00"){
+          return id.includes("0A") || id.includes("0B") || id.includes("0C")
+        } else {
+          let numbersOnlyID = id.replace(/[^0-9.]/g, '')
+          return numbersOnlyID.startsWith(level)
+        }
+      }
+      for(let worksheetID in allWorksheets){
+        if(idIsLevel(worksheetID, levelInteger)){
+          ret.push(worksheetID)
+        }
+      }
+      return ret
+    }
+    
+    function openWorksheet(){
+      $("html").css("cursor", "progress")
+      $(".open-worksheet-button").css("cursor", "progress")
+      setTimeout( ()=> {
+        window.open('http://127.0.0.1:5500/project-copies/ws-browser/placeholder-ws.pdf', '_blank', 'popup', 'width=500,height=700')
+        $("html").css("cursor", "default")
+        $(".open-worksheet-button").css("cursor", "pointer")
+      }, 2000)
+    }
+  </script>
+</body>
+</html>
