@@ -1,1 +1,7 @@
-<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300" width="1667" height="2500"><style type="text/css">.st0{fill:#0acf83}.st1{fill:#a259ff}.st2{fill:#f24e1e}.st3{fill:#ff7262}.st4{fill:#1abcfe}</style><title>Figma.logo</title><desc>Created using Figma</desc><path id="path0_fill" class="st0" d="M50 300c27.6 0 50-22.4 50-50v-50H50c-27.6 0-50 22.4-50 50s22.4 50 50 50z"/><path id="path1_fill" class="st1" d="M0 150c0-27.6 22.4-50 50-50h50v100H50c-27.6 0-50-22.4-50-50z"/><path id="path1_fill_1_" class="st2" d="M0 50C0 22.4 22.4 0 50 0h50v100H50C22.4 100 0 77.6 0 50z"/><path id="path2_fill" class="st3" d="M100 0h50c27.6 0 50 22.4 50 50s-22.4 50-50 50h-50V0z"/><path id="path3_fill" class="st4" d="M200 150c0 27.6-22.4 50-50 50s-50-22.4-50-50 22.4-50 50-50 50 22.4 50 50z"/></svg>
+<svg width="2367" height="2367" viewBox="0 0 2367 2367" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M788.5 2367C1006.26 2367 1183 2190.26 1183 1972.5V1578H788.5C570.736 1578 394 1754.74 394 1972.5C394 2190.26 570.736 2367 788.5 2367Z" fill="#0ACF83"/>
+<path d="M394 1183.5C394 965.736 570.736 789 788.5 789H1183V1578H788.5C570.736 1578 394 1401.26 394 1183.5Z" fill="#A259FF"/>
+<path d="M394 394.5C394 176.736 570.736 0 788.5 0H1183V789H788.5C570.736 789 394 612.264 394 394.5Z" fill="#F24E1E"/>
+<path d="M1183 0H1577.5C1795.26 0 1972 176.736 1972 394.5C1972 612.264 1795.26 789 1577.5 789H1183V0Z" fill="#FF7262"/>
+<path d="M1972 1183.5C1972 1401.26 1795.26 1578 1577.5 1578C1359.74 1578 1183 1401.26 1183 1183.5C1183 965.736 1359.74 789 1577.5 789C1795.26 789 1972 965.736 1972 1183.5Z" fill="#1ABCFE"/>
+</svg>
